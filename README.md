@@ -11,7 +11,7 @@ I am currently pursuing my tertiary education at the Sepuluh Nopember Institute 
 
 ### 🐍 GitHub Contributions Snake Game
 
-![GitHub Snake](https://github.com/AtokTajuddin/GitHub-Snake-Game/blob/output/github-contribution-grid-snake.svg)
+![GitHub Snake](https://raw.githubusercontent.com/AtokTajuddin/AtokTajuddin/output/dist/github-snake.svg)
 
 
 
