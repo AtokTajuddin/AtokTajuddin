@@ -8,27 +8,27 @@ jobs:
   update-cyber:
     runs-on: ubuntu-latest
     
-    permissions: # Tambahkan ini
-      contents: write
-      
+    permissions:
+      contents: write  # Wajib untuk push
+    
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
         with:
           ref: master
-          persist-credentials: false # Penting!
+          persist-credentials: false  # Penting untuk auth
 
-      - name: Update timestamp
+      - name: Update animation
         run: |
           mkdir -p dist
           echo "<!-- Updated: $(date '+%Y-%m-%d %H:%M:%S') -->" >> dist/profile-animation.svg
 
-      - name: Commit changes
+      - name: Commit and push changes
         uses: stefanzweifel/git-auto-commit-action@v4
         with:
-          commit_message: 'Update profile animation timestamp'
+          commit_message: 'Update profile animation'
           branch: master
           file_pattern: dist/profile-animation.svg
-          commit_user_name: 'GitHub Action'
-          commit_user_email: 'action@github.com'
-          token: ${{ secrets.GITHUB_TOKEN }} # Wajib ditambahkan
+          commit_user_name: "GitHub Action"
+          commit_user_email: "action@github.com"
+          commit_author: "GitHub Action <action@github.com>"
