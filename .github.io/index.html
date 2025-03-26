@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#00ff9d">
+    <meta property="og:image" content="https://i.imgur.com/your-screenshot.png">
+    <title>🚀Profile</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body class="bg-gray-900 min-h-screen flex items-center justify-center overflow-hidden">
+    <!-- Animated Code Panel -->
+    <div class="code-panel">
+        <div class="code-animation"></div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="main-content">
+        <!-- Visit Counter -->
+        <div class="visit-counter">
+            <div class="pulse-dot"></div>
+            <p id="visitCount">0</p>
+            <p>VISITORS COUNT</p>
+        </div>
+
+        <!-- Profile Section -->
+        <div class="profile-section">
+            <h1 class="cyber-glitch">Code_Enthusiast</h1>
+            <p class="terminal-text">>_ I am programmer</p>
+        </div>
+    </div>
+
+    <!-- 3D Laptop -->
+    <div class="laptop-container">
+        <div class="laptop-screen">
+            <div class="code-animation"></div>
+        </div>
+        <div class="laptop-base"></div>
+    </div>
+
+    <script>
+        // Visit Counter
+        document.addEventListener('DOMContentLoaded', () => {
+            let count = localStorage.getItem('visitCount') || 0;
+            count = Number(count) + 1;
+            localStorage.setItem('visitCount', count);
+            document.getElementById('visitCount').textContent = `0x${count.toString(16).padStart(4, '0')}`;
+        });
+
+        // Random Code Generator
+        function generateCode(lines = 50) {
+            const characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ$%&/#1234567890{}[]=+-_';
+            const commands = ['git commit', 'npm start', 'sudo apt-get', 'docker build', 'curl -X GET'];
+            
+            return Array.from({length: lines}, (_, i) => {
+                if(i % 5 === 0) {
+                    return `<span class="text-blue-400">${commands[Math.floor(Math.random() * commands.length)]}</span>`;
+                }
+                return Array.from({length: 40}, () => 
+                    characters[Math.floor(Math.random() * characters.length)]
+                ).join('');
+            }).join('<br>');
+        }
+
+        // Insert generated code
+        document.querySelectorAll('.code-animation').forEach(panel => {
+            panel.innerHTML = generateCode(30);
+        });
+    </script>
+</body>
+</html>
