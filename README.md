@@ -9,6 +9,12 @@ I am currently pursuing my tertiary education at the Sepuluh Nopember Institute 
 ![](https://nirzak-streak-stats.vercel.app/?user=AtokTajuddin&theme=dark&hide_border=false)<br/>
 ![](https://github-readme-stats.vercel.app/api/top-langs/?username=AtokTajuddin&theme=dark&hide_border=false&include_all_commits=true&count_private=false&layout=compact)
 
+### 🐍 GitHub Contributions Snake Game
+
+![GitHub Snake dark](https://raw.githubusercontent.com/YOUR_GITHUB_USERNAME/output/github-snake-dark.svg#gh-dark-mode-only)
+![GitHub Snake light](https://raw.githubusercontent.com/YOUR_GITHUB_USERNAME/output/github-snake.svg#gh-light-mode-only)
+
+
 ### ✍️ Random Dev Quote
 ![](https://quotes-github-readme.vercel.app/api?type=horizontal&theme=radical)
 
