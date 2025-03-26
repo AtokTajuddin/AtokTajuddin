@@ -1,7 +1,7 @@
 # 💫 About Me:
 I am currently pursuing my tertiary education at the Sepuluh Nopember Institute of Technology.<br><br>I am interested in several fields to continue to learn, including:<br>Low-Level & Systems Programming<br>Cybersecurity Engineering<br>Backend Engineering<br>
 
-[![Cyber Animation](https://img.shields.io/badge/View_Live_Animation-00ff9d?style=for-the-badge&logo=github)](https://AtokTajuddin.github.io)
+[![Live Demo](https://img.shields.io/badge/VIEW_LIVE_DEMO-00ff9d?style=for-the-badge&logo=github)](https://AtokTajuddin.github.io)
 
 
 # 💻 Tech Stack:
