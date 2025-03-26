@@ -1,20 +1,24 @@
 name: Update Profile Animation
 on:
   schedule:
-    - cron: '0 3 * * *'  # Jalankan setiap hari jam 3 pagi UTC
-  workflow_dispatch:      # Bisa di-trigger manual
+    - cron: '0 3 * * *'
+  workflow_dispatch:
 
 jobs:
-  update-animation:
+  update-cyber:
     runs-on: ubuntu-latest
     
+    permissions: # Tambahkan ini
+      contents: write
+      
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
         with:
-          ref: master  # Sesuaikan dengan branch utama Anda
+          ref: master
+          persist-credentials: false # Penting!
 
-      - name: Update animation
+      - name: Update timestamp
         run: |
           mkdir -p dist
           echo "<!-- Updated: $(date '+%Y-%m-%d %H:%M:%S') -->" >> dist/profile-animation.svg
@@ -22,8 +26,9 @@ jobs:
       - name: Commit changes
         uses: stefanzweifel/git-auto-commit-action@v4
         with:
-          commit_message: 'Update profile animation'
+          commit_message: 'Update profile animation timestamp'
           branch: master
           file_pattern: dist/profile-animation.svg
-          commit_user_name: GitHub Action
-          commit_user_email: action@github.com
+          commit_user_name: 'GitHub Action'
+          commit_user_email: 'action@github.com'
+          token: ${{ secrets.GITHUB_TOKEN }} # Wajib ditambahkan
