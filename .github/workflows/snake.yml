@@ -2,12 +2,14 @@ name: GitHub Snake Game
 
 on:
   schedule:
-    - cron: "0 0 * * *"
-  workflow_dispatch:
-
+    - cron: "* * * * *"  
+  workflow_dispatch:  # Bisa dijalankan manual
   push:
     branches:
       - master
+
+permissions:
+  contents: write  # Diperlukan untuk push ke branch output
 
 jobs:
   generate:
@@ -15,24 +17,22 @@ jobs:
     timeout-minutes: 10
 
     steps:
-      # Step 1: Checkout repository
       - name: Checkout Repository
         uses: actions/checkout@v3
 
-      # Step 2: Generate Snake Animation
       - name: Generate GitHub Contributions Snake Animations
-        uses: Platane/snk@v3
+        uses: Platane/snk@master
         with:
           github_user_name: ${{ github.repository_owner }}
           outputs: |
             dist/github-snake.svg
-            dist/github-snake-dark.svg?palette=github-dark
-            dist/ocean.gif?color_snake=orange&color_dots=#bfd6f6,#8dbdff,#64a1f4,#4b91f1,#3c7dd9
+            dist/github-snake-dark.svg
+            dist/ocean.gif
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Deploy to Output Branch
-        uses: peaceiris/actions-gh-pages@v3
+        uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./dist
