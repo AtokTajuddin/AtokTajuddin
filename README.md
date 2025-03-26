@@ -12,7 +12,8 @@ I am currently pursuing my tertiary education at the Sepuluh Nopember Institute 
 ### 🐍 GitHub Contributions Snake
 
 #### 🌞 Mode Terang
-![GitHub Snake GIF](https://raw.githubusercontent.com/AtokTajuddin/AtokTajuddin/output/github-snake.gif?color_snake=orange&color_dots=#bfd6f6,#8dbdff,#64a1f4,#4b91f1,#3c7dd9)
+![GitHub Snake](https://raw.githubusercontent.com/AtokTajuddin/AtokTajuddin/output/github-snake.gif)
+
 
 
 
