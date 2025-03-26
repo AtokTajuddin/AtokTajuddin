@@ -1,63 +1,106 @@
-name: Update Profile Animation
+name: Generate Animated Profile
 on:
+  workflow_dispatch:
   schedule:
     - cron: '0 3 * * *'
-  workflow_dispatch:
-
-permissions:
-  contents: write
 
 jobs:
-  generate-profile-animation:
+  generate-svg:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout Repository
+      - name: Checkout repo
         uses: actions/checkout@v4
-        with:
-          ref: master
-          token: ${{ secrets.GITHUB_TOKEN }}
 
-      - name: Generate Animated SVG
+      - name: Generate SVG
         run: |
           mkdir -p dist
           CURRENT_DATE=$(date '+%Y-%m-%d %H:%M:%S')
-          cat > dist/profile-animation.svg <<EOF
-          <svg xmlns="http://www.w3.org/2000/svg" width="200" height="200" viewBox="0 0 200 200">
-            <style>
-              .text { font: 12px sans-serif; fill: #333; }
-              .circle { fill: none; stroke: #4a90e2; stroke-width: 3; }
-            </style>
-            
-            <!-- Animated rotating circle -->
-            <g transform="translate(100,100)">
-              <circle class="circle" r="50">
-                <animateTransform
-                  attributeName="transform"
-                  type="rotate"
-                  from="0"
-                  to="360"
-                  dur="4s"
-                  repeatCount="indefinite"/>
-              </circle>
+          HEX_COUNT=$(shuf -i 100-999 -n 1 | awk '{printf "0x%04x\n", $1}')
+          
+          # Generate random code lines
+          GENERATED_CODE=$(awk -v len=40 -v lines=30 'BEGIN {
+            chars="ABCDEFGHIJKLMNOPQRSTUVWXYZ$%&/#1234567890{}[]=+-_"
+            commands="git commit npm start sudo apt-get docker build curl -X GET"
+            split(commands, cmd)
+            for(i=1;i<=lines;i++){
+              if(i%5==0) printf "<tspan x='20' dy='20' fill='#4fdfff'>" cmd[int(rand()*5)+1] "</tspan>"
+              else {
+                str=""
+                for(j=0;j<len;j++) str = str substr(chars, int(rand()*length(chars))+1,1)
+                printf "<tspan x='20' dy='20'>%s</tspan>", str
+              }
+            }
+          }')
+
+          cat > dist/profile.svg <<EOF
+          <svg xmlns="http://www.w3.org/2000/svg" width="1200" height="800" viewBox="0 0 1200 800">
+            <defs>
+              <linearGradient id="cyberGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stop-color="#0a0a0a"/>
+                <stop offset="100%" stop-color="#001a0f"/>
+              </linearGradient>
+              
+              <filter id="glitch">
+                <feTurbulence type="fractalNoise" baseFrequency="0.01" numOctaves="2"/>
+                <feDisplacementMap in="SourceGraphic" scale="5"/>
+              </filter>
+            </defs>
+
+            <!-- Left Code Panel -->
+            <g transform="translate(50 500)">
+              <rect width="300" height="400" fill="url(#cyberGrad)" rx="10"/>
+              <g transform="translate(0 200)" font-family="monospace" font-size="14" fill="#00ff9d">
+                ${GENERATED_CODE}
+                <animateTransform attributeName="transform" type="translate" 
+                  from="0 200" to="0 -200" dur="20s" repeatCount="indefinite"/>
+              </g>
             </g>
-            
-            <!-- Text with update time -->
-            <text x="50%" y="190" class="text" text-anchor="middle">
-              Last Updated: $CURRENT_DATE
+
+            <!-- Center Content -->
+            <g transform="translate(450 300)">
+              <rect width="300" height="200" rx="15" fill="#1a1a1a"/>
+              <text x="150" y="100" text-anchor="middle" font-size="48" fill="#00ff9d" filter="url(#glitch)">
+                <tspan>Code</tspan>
+                <tspan x="150" dy="60">Enthusiast</tspan>
+              </text>
+              <text x="150" y="180" text-anchor="middle" font-size="24" fill="#fff" font-family="monospace">
+                >_ I am programmer
+              </text>
+            </g>
+
+            <!-- Right Laptop -->
+            <g transform="translate(800 500) rotate(-10)">
+              <path d="M0 0h300v200H0z" fill="#333"/>
+              <rect x="20" y="20" width="260" height="160" fill="#000"/>
+              <g font-family="monospace" font-size="14" fill="#00ff9d">
+                ${GENERATED_CODE}
+                <animateTransform attributeName="transform" type="translate" 
+                  from="0 0" to="0 -200" dur="18s" repeatCount="indefinite"/>
+              </g>
+            </g>
+
+            <!-- Visit Counter -->
+            <g transform="translate(200 100)">
+              <rect width="200" height="80" rx="15" fill="#1a1a1a"/>
+              <circle cx="60" cy="40" r="15" fill="#00ff9d" opacity="0.8">
+                <animate attributeName="r" values="15;12;15" dur="1.5s" repeatCount="indefinite"/>
+              </circle>
+              <text x="120" y="50" font-size="24" fill="#00ff9d" font-family="monospace">
+                ${HEX_COUNT}
+                <tspan x="120" dy="25" font-size="14" fill="#ccc">VISITORS</tspan>
+              </text>
+            </g>
+
+            <text x="20" y="780" font-size="12" fill="#fff">
+              Last update: ${CURRENT_DATE}
             </text>
-            
-            <!-- Blinking dot animation -->
-            <circle cx="160" cy="40" r="5" fill="#ff4757">
-              <animate attributeName="opacity" values="0;1;0" dur="2s" repeatCount="indefinite"/>
-            </circle>
           </svg>
           EOF
 
-      - name: Deploy to Output Branch
+      - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./dist
           publish_branch: output
-          keep_files: true  # Penting: mempertahankan file yang sudah ada
-          commit_message: "Update profile animation [skip ci]"
+          keep_files: true
