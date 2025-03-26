@@ -11,8 +11,8 @@ I am currently pursuing my tertiary education at the Sepuluh Nopember Institute 
 
 ### 🐍 GitHub Contributions Snake Game
 
-![GitHub Snake dark](https://raw.githubusercontent.com/YOUR_GITHUB_USERNAME/output/github-snake-dark.svg#gh-dark-mode-only)
-![GitHub Snake light](https://raw.githubusercontent.com/YOUR_GITHUB_USERNAME/output/github-snake.svg#gh-light-mode-only)
+![GitHub Snake dark](https://raw.githubusercontent.com/AtokTajuddin/output/github-snake-dark.svg#gh-dark-mode-only)
+![GitHub Snake light](https://raw.githubusercontent.com/AtokTajuddin/output/github-snake.svg#gh-light-mode-only)
 
 
 ### ✍️ Random Dev Quote
