@@ -16,7 +16,7 @@ I am currently pursuing my tertiary education at the Sepuluh Nopember Institute 
 
 
 # GitHub Activity Graph
-[![GitHub Activity Graph](https://github-readme-activity-graph.vercel.app/graph?username={username}&theme=react-dark&area=true&hide_border=true&custom_title=Contribution%20Graph&line=61DAFB)](https://github.com/ashutosh00710/github-readme-activity-graph)
+[![GitHub Activity Graph](https://github-readme-activity-graph.vercel.app/graph?username={AtokTajuddin}&theme=react-dark&area=true&hide_border=true&custom_title=Contribution%20Graph&line=61DAFB)](https://github.com/ashutosh00710/github-readme-activity-graph)
 
 
 
