@@ -8,99 +8,28 @@ jobs:
   generate-svg:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout repo
+      - name: Checkout repository
         uses: actions/checkout@v4
+        with:
+          ref: master
+          fetch-depth: 0  # Penting untuk mendapatkan semua branch
+          token: ${{ secrets.PAT_TOKEN }} # Ganti dengan Personal Access Token
+
+      - name: Setup Git config
+        run: |
+          git config --global user.name "GitHub Actions"
+          git config --global user.email "actions@github.com"
 
       - name: Generate SVG
         run: |
-          mkdir -p dist
-          CURRENT_DATE=$(date '+%Y-%m-%d %H:%M:%S')
-          HEX_COUNT=$(shuf -i 100-999 -n 1 | awk '{printf "0x%04x\n", $1}')
-          
-          # Generate random code lines
-          GENERATED_CODE=$(awk -v len=40 -v lines=30 'BEGIN {
-            chars="ABCDEFGHIJKLMNOPQRSTUVWXYZ$%&/#1234567890{}[]=+-_"
-            commands="git commit npm start sudo apt-get docker build curl -X GET"
-            split(commands, cmd)
-            for(i=1;i<=lines;i++){
-              if(i%5==0) printf "<tspan x='20' dy='20' fill='#4fdfff'>" cmd[int(rand()*5)+1] "</tspan>"
-              else {
-                str=""
-                for(j=0;j<len;j++) str = str substr(chars, int(rand()*length(chars))+1,1)
-                printf "<tspan x='20' dy='20'>%s</tspan>", str
-              }
-            }
-          }')
+          # Script generate SVG sebelumnya...
 
-          cat > dist/profile.svg <<EOF
-          <svg xmlns="http://www.w3.org/2000/svg" width="1200" height="800" viewBox="0 0 1200 800">
-            <defs>
-              <linearGradient id="cyberGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-                <stop offset="0%" stop-color="#0a0a0a"/>
-                <stop offset="100%" stop-color="#001a0f"/>
-              </linearGradient>
-              
-              <filter id="glitch">
-                <feTurbulence type="fractalNoise" baseFrequency="0.01" numOctaves="2"/>
-                <feDisplacementMap in="SourceGraphic" scale="5"/>
-              </filter>
-            </defs>
-
-            <!-- Left Code Panel -->
-            <g transform="translate(50 500)">
-              <rect width="300" height="400" fill="url(#cyberGrad)" rx="10"/>
-              <g transform="translate(0 200)" font-family="monospace" font-size="14" fill="#00ff9d">
-                ${GENERATED_CODE}
-                <animateTransform attributeName="transform" type="translate" 
-                  from="0 200" to="0 -200" dur="20s" repeatCount="indefinite"/>
-              </g>
-            </g>
-
-            <!-- Center Content -->
-            <g transform="translate(450 300)">
-              <rect width="300" height="200" rx="15" fill="#1a1a1a"/>
-              <text x="150" y="100" text-anchor="middle" font-size="48" fill="#00ff9d" filter="url(#glitch)">
-                <tspan>Code</tspan>
-                <tspan x="150" dy="60">Enthusiast</tspan>
-              </text>
-              <text x="150" y="180" text-anchor="middle" font-size="24" fill="#fff" font-family="monospace">
-                >_ I am programmer
-              </text>
-            </g>
-
-            <!-- Right Laptop -->
-            <g transform="translate(800 500) rotate(-10)">
-              <path d="M0 0h300v200H0z" fill="#333"/>
-              <rect x="20" y="20" width="260" height="160" fill="#000"/>
-              <g font-family="monospace" font-size="14" fill="#00ff9d">
-                ${GENERATED_CODE}
-                <animateTransform attributeName="transform" type="translate" 
-                  from="0 0" to="0 -200" dur="18s" repeatCount="indefinite"/>
-              </g>
-            </g>
-
-            <!-- Visit Counter -->
-            <g transform="translate(200 100)">
-              <rect width="200" height="80" rx="15" fill="#1a1a1a"/>
-              <circle cx="60" cy="40" r="15" fill="#00ff9d" opacity="0.8">
-                <animate attributeName="r" values="15;12;15" dur="1.5s" repeatCount="indefinite"/>
-              </circle>
-              <text x="120" y="50" font-size="24" fill="#00ff9d" font-family="monospace">
-                ${HEX_COUNT}
-                <tspan x="120" dy="25" font-size="14" fill="#ccc">VISITORS</tspan>
-              </text>
-            </g>
-
-            <text x="20" y="780" font-size="12" fill="#fff">
-              Last update: ${CURRENT_DATE}
-            </text>
-          </svg>
-          EOF
-
-      - name: Deploy
+      - name: Deploy to Output Branch
         uses: peaceiris/actions-gh-pages@v3
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
+          github_token: ${{ secrets.PAT_TOKEN }} # Harus sama dengan token checkout
           publish_dir: ./dist
           publish_branch: output
           keep_files: true
+          force_orphan: true  # Untuk menghindari conflict history
+          enable_jekyll: false
