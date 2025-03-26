@@ -2,14 +2,14 @@ name: GitHub Snake Game
 
 on:
   schedule:
-    - cron: "0 0 * * *"  
-  workflow_dispatch: 
+    - cron: "0 0 * * *"  # Menjalankan setiap tengah malam
+  workflow_dispatch:  # Bisa dijalankan manual
   push:
     branches:
       - master
 
 permissions:
-  contents: write  
+  contents: write  # Diperlukan untuk push ke branch output
 
 jobs:
   generate:
@@ -24,18 +24,16 @@ jobs:
         uses: Platane/snk@master
         with:
           github_user_name: ${{ github.repository_owner }}
-          outputs: |
-            dist/github-snake.svg
-            dist/github-snake-dark.svg
-            dist/ocean.gif
+          svg_out_path: dist/github-snake.svg
+          gif_out_path: dist/github-snake.gif
 
       - name: Commit and push the generated files
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
-          git add dist/github-snake.svg dist/github-snake-dark.svg dist/ocean.gif
+          git add dist/github-snake.svg dist/github-snake.gif
           git commit -m "Update Snake animation [skip ci]" || echo "No changes to commit"
-          git push
+          git push origin master || echo "No changes to push"
 
       - name: Deploy to Output Branch
         uses: peaceiris/actions-gh-pages@v4
