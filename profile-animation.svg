@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="200" viewBox="0 0 200 200">
+  <style>
+    .text { font: 12px sans-serif; fill: #333; }
+    .circle { fill: none; stroke: #4a90e2; stroke-width: 3; }
+  </style>
+  
+  <!-- Animated rotating circle -->
+  <g transform="translate(100,100)">
+    <circle class="circle" r="50">
+      <animateTransform
+        attributeName="transform"
+        type="rotate"
+        from="0"
+        to="360"
+        dur="4s"
+        repeatCount="indefinite"/>
+    </circle>
+  </g>
+  
+  <!-- Text with update time -->
+  <text x="50%" y="190" class="text" text-anchor="middle">
+    Last Updated: 2025-03-26 23:10:12
+  </text>
+  
+  <!-- Blinking dot animation -->
+  <circle cx="160" cy="40" r="5" fill="#ff4757">
+    <animate attributeName="opacity" values="0;1;0" dur="2s" repeatCount="indefinite"/>
+  </circle>
+</svg>
