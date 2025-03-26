@@ -19,14 +19,26 @@ jobs:
 
       - name: Generate Animation
         run: |
-          mkdir -p dist
-          echo "<!-- Updated: $(date '+%Y-%m-%d %H:%M:%S') -->" > dist/profile-animation.svg
-          # Tambahkan konten SVG disini
+          mkdir -p docs
+          cat <<EOF > docs/profile-animation.svg
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 200">
+            <!-- Isi animasi SVG -->
+            <style>
+              @keyframes glitch {
+                0% { opacity: 0.8; }
+                100% { opacity: 1; }
+              }
+            </style>
+            <text x="50%" y="50%" style="animation: glitch 0.5s infinite">
+              Last Update: $(date '+%Y-%m-%d %H:%M:%S')
+            </text>
+          </svg>
+          EOF
 
-      - name: Deploy to Output Branch
+      - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./dist
+          publish_dir: ./docs
           publish_branch: output
           commit_message: "Update profile animation [skip ci]"
