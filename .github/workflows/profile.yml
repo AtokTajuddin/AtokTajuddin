@@ -4,31 +4,29 @@ on:
     - cron: '0 3 * * *'
   workflow_dispatch:
 
+permissions:
+  contents: write
+
 jobs:
-  update-cyber:
+  generate-profile-animation:
     runs-on: ubuntu-latest
-    
-    permissions:
-      contents: write  # Wajib untuk push
-    
     steps:
-      - name: Checkout repository
+      - name: Checkout Repository
         uses: actions/checkout@v4
         with:
           ref: master
-          persist-credentials: false  # Penting untuk auth
+          token: ${{ secrets.GITHUB_TOKEN }}
 
-      - name: Update animation
+      - name: Generate Animation
         run: |
           mkdir -p dist
-          echo "<!-- Updated: $(date '+%Y-%m-%d %H:%M:%S') -->" >> dist/profile-animation.svg
+          echo "<!-- Updated: $(date '+%Y-%m-%d %H:%M:%S') -->" > dist/profile-animation.svg
+          # Tambahkan konten SVG disini
 
-      - name: Commit and push changes
-        uses: stefanzweifel/git-auto-commit-action@v4
+      - name: Deploy to Output Branch
+        uses: peaceiris/actions-gh-pages@v3
         with:
-          commit_message: 'Update profile animation'
-          branch: master
-          file_pattern: dist/profile-animation.svg
-          commit_user_name: "GitHub Action"
-          commit_user_email: "action@github.com"
-          commit_author: "GitHub Action <action@github.com>"
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./dist
+          publish_branch: output
+          commit_message: "Update profile animation [skip ci]"
