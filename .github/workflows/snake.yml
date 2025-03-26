@@ -1,20 +1,20 @@
 name: GitHub Snake Game
 
 on:
-  # Jalankan setiap tengah malam UTC
+  # Menjadwalkan workflow untuk berjalan setiap tengah malam UTC
   schedule:
     - cron: "0 0 * * *"
 
-  # Bisa dijalankan secara manual
+  # Memungkinkan pemicu manual dari workflow
   workflow_dispatch:
 
-  # Jalankan ketika ada perubahan di branch master
+  # Memicu workflow saat ada push ke branch 'master'
   push:
     branches:
       - master
 
 permissions:
-  contents: write  
+  contents: write  # Diperlukan untuk melakukan push ke repository
 
 jobs:
   generate:
@@ -22,33 +22,32 @@ jobs:
     timeout-minutes: 10
 
     steps:
+      # Langkah 1: Checkout repository
       - name: Checkout Repository
         uses: actions/checkout@v3
 
+      # Langkah 2: Menghasilkan animasi Snake dari kontribusi GitHub
       - name: Generate GitHub Contributions Snake Animations
         uses: Platane/snk@v3
         with:
           github_user_name: ${{ github.repository_owner }}
-          svg_out_path: dist/github-snake.svg
-          gif_out_path: dist/github-snake.gif
-
+          outputs: |
+            dist/github-snake.svg
+            dist/github-snake-dark.svg?palette=github-dark
+            dist/ocean.gif?color_snake=orange&color_dots=#bfd6f6,#8dbdff,#64a1f4,#4b91f1,#3c7dd9
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
-      - name: Debug Output File
-        run: |
-          echo "Checking generated files..."
-          ls -lah dist
-          cat dist/github-snake.svg || echo "No SVG file found"
-
+      # Langkah 3: Commit dan push file yang dihasilkan
       - name: Commit and Push Generated Files
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
-          git add dist/github-snake.svg dist/github-snake.gif || echo "No files to add"
+          git add dist/github-snake.svg dist/github-snake-dark.svg dist/ocean.gif
           git commit -m "Update Snake animation [skip ci]" || echo "No changes to commit"
           git push origin master || echo "No changes to push"
 
+      # Langkah 4: Deploy file yang dihasilkan ke branch 'output'
       - name: Deploy to Output Branch
         uses: peaceiris/actions-gh-pages@v3
         with:
