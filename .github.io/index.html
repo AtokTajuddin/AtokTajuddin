@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,13 +8,23 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
         @keyframes code-scroll {
-            0% { transform: translateY(0); }
-            100% { transform: translateY(-50%); }
+            0% {
+                transform: translateY(0);
+            }
+
+            100% {
+                transform: translateY(-50%);
+            }
         }
 
         @keyframes glitch {
-            0% { text-shadow: 2px 0 #00ff9d, -2px 0 #ff00c1; }
-            100% { text-shadow: -2px 0 #00ff9d, 2px 0 #ff00c1; }
+            0% {
+                text-shadow: 2px 0 #00ff9d, -2px 0 #ff00c1;
+            }
+
+            100% {
+                text-shadow: -2px 0 #00ff9d, 2px 0 #ff00c1;
+            }
         }
 
         .cyber-terminal {
@@ -23,12 +34,7 @@
 
         .code-animation {
             animation: code-scroll 20s linear infinite;
-            background: repeating-linear-gradient(
-                #001a0f,
-                #001a0f 24px,
-                #00ff9d25 24px,
-                #00ff9d25 48px
-            );
+            background: repeating-linear-gradient(#001a0f, #001a0f 24px, #00ff9d25 24px, #00ff9d25 48px);
         }
 
         .cyber-glitch {
@@ -46,6 +52,7 @@
         }
     </style>
 </head>
+
 <body class="bg-gray-900 min-h-screen flex items-center justify-center overflow-hidden">
     <!-- Animated Code Panel -->
     <div class="fixed left-8 bottom-8 w-64 h-96 cyber-terminal rounded-lg overflow-hidden">
@@ -91,22 +98,26 @@
     <script>
         // Visit Counter
         document.addEventListener('DOMContentLoaded', () => {
-            let count = localStorage.getItem('visitCount') || 0;
-            count = Number(count) + 1;
+            let count = parseInt(localStorage.getItem('visitCount')) || 0;
+            count++;
             localStorage.setItem('visitCount', count);
-            document.getElementById('visitCount').textContent = `0x${count.toString(16).padStart(4, '0')}`;
+            document.getElementById('visitCount').textContent = count;
         });
 
         // Random Code Generator
         function generateCode(lines = 50) {
             const characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ$%&/#1234567890{}[]=+-_';
             const commands = ['git commit', 'npm start', 'sudo apt-get', 'docker build', 'curl -X GET'];
-            
-            return Array.from({length: lines}, (_, i) => {
-                if(i % 5 === 0) {
+
+            return Array.from({
+                length: lines
+            }, (_, i) => {
+                if (i % 5 === 0) {
                     return `<span class="text-blue-400">${commands[Math.floor(Math.random() * commands.length)]}</span>`;
                 }
-                return Array.from({length: 40}, () => 
+                return Array.from({
+                    length: 40
+                }, () =>
                     characters[Math.floor(Math.random() * characters.length)]
                 ).join('');
             }).join('<br>');
@@ -117,33 +128,6 @@
             panel.innerHTML = generateCode(30);
         });
     </script>
-    <div class="visitor-counter">
-        <div class="pulse-dot"></div>
-        <div>
-            <p id="visitCount">0x0000</p>
-            <small>VISITORS COUNT</small>
-        </div>
-    </div>
-<script>
-    // Visitor counter untuk GitHub Pages
-    const updateCounter = async () => {
-        try {
-            // Gunakan format: hit/[username]/[repo-name]
-            const hitResponse = await fetch('https://api.countapi.xyz/hit/AtokTajuddin/AtokTajuddin.github.io');
-            const getResponse = await fetch('https://api.countapi.xyz/get/AtokTajuddin/AtokTajuddin.github.io');
-            const data = await getResponse.json();
-            
-            // Format hex 4-digit (contoh: 0x03A1)
-            const hexCount = data.value.toString(16).padStart(4, '0').toUpperCase();
-            document.getElementById('visitCount').textContent = `0x${hexCount}`;
-        } catch (error) {
-            console.error('Error updating counter:', error);
-            document.getElementById('visitCount').textContent = "0xDEAD"; // Fallback error
-        }
-    };
-
-    updateCounter();
-</script>
-</script>
 </body>
+
 </html>
