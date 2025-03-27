@@ -120,24 +120,30 @@
     <!-- Letakkan di dalam file index.html, tepat sebelum penutup </body> -->
 <script>
     // Visitor counter dengan CountAPI
-    const updateCounter = async () => {
-        try {
-            // Ganti path dengan format: hit/[namespace]/[key]
-            const hitResponse = await fetch('https://api.countapi.xyz/hit/AtokTajuddin/AtokTajuddin');
-            
-            // Path get harus sama dengan path hit
-            const getResponse = await fetch('https://api.countapi.xyz/get/AtokTajuddin/AtokTajuddin');
-            const getData = await getResponse.json();
-            
-            // Format hex dengan padding 4 digit
-            const hexCount = getData.value.toString(16).padStart(4, '0');
-            document.getElementById('visitCount').textContent = `0x${hexCount}`;
-        } catch (error) {
-            console.error('Error updating counter:', error);
-        }
-    };
+    <!-- Visitor Counter -->
+  <div class="visitor-counter">
+    <div class="pulse-dot"></div>
+    <div>
+      <p id="visitCount">0x0000</p>
+      <small>VISITORS COUNT</small>
+    </div>
+  </div>
 
+  <!-- Script Counter -->
+  <script>
+    const updateCounter = async () => {
+      try {
+        const repoName = "AtokTajuddin.github.io"; // Sesuaikan!
+        const hit = await fetch(`https://api.countapi.xyz/hit/AtokTajuddin/${repoName}`);
+        const get = await fetch(`https://api.countapi.xyz/get/AtokTajuddin/${repoName}`);
+        const data = await get.json();
+        document.getElementById('visitCount').textContent = `0x${data.value.toString(16).padStart(4, '0')}`;
+      } catch (error) {
+        console.error("Error:", error);
+      }
+    };
     updateCounter();
+  </script>
 </script>
 </body>
 </html>
