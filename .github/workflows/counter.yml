@@ -2,31 +2,41 @@ name: Update Counter
 on:
   schedule:
     - cron: '0 * * * *' # Update setiap jam
-  workflow_dispatch: # Memungkinkan trigger manual
+  workflow_dispatch:
 
 jobs:
   update:
     runs-on: ubuntu-latest
     permissions:
-      contents: write # Beri akses write
-    
-    steps:
-      - uses: actions/checkout@v3
-      
-      - name: Get Count
-        id: count
-        uses: juliangruber/unique-id-action@v1
-        with:
-          key: ${{ github.repository }}-visits
+      contents: write
 
-      - name: Update SVG
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Initialize counter
+        id: init_counter
         run: |
-          # Format count ke hex 4 digit
-          HEX_COUNT=$(printf '%04x' ${{ steps.count.outputs.count }})
+          if [ ! -f .github.io/count.txt ]; then
+            echo "1000" > .github.io/count.txt
+          fi
+          COUNT=$(cat .github.io/count.txt)
+          echo "count=$((COUNT + 1))" >> $GITHUB_ENV
+
+      - name: Update counter files
+        run: |
+          # Update count.txt
+          echo ${{ env.count }} > .github.io/count.txt
+          
+          # Update SVG
+          HEX_COUNT=$(printf '%04x' ${{ env.count }})
           sed -i "s/0x[0-9a-fA-F]\{4\}/0x${HEX_COUNT}/g" .github.io/counter.svg
 
-      - uses: stefanzweifel/git-auto-commit-action@v4
+      - name: Commit changes
+        uses: stefanzweifel/git-auto-commit-action@v4
         with:
-          commit_message: "🔄 Update visitor counter: 0x${HEX_COUNT}"
+          commit_message: "📈 Update visitor counter: 0x$(printf '%04x' ${{ env.count }})"
           branch: master
-          file_pattern: .github.io/counter.svg
+          files: |
+            .github.io/count.txt
+            .github.io/counter.svg
