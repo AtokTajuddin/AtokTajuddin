@@ -123,10 +123,10 @@
     const updateCounter = async () => {
         try {
             // Ganti path dengan format: hit/[namespace]/[key]
-            const hitResponse = await fetch('https://api.countapi.xyz/hit/AtokTajuddin/cyber-profile');
+            const hitResponse = await fetch('https://api.countapi.xyz/hit/AtokTajuddin/AtokTajuddin');
             
             // Path get harus sama dengan path hit
-            const getResponse = await fetch('https://api.countapi.xyz/get/AtokTajuddin/cyber-profile');
+            const getResponse = await fetch('https://api.countapi.xyz/get/AtokTajuddin/AtokTajuddin');
             const getData = await getResponse.json();
             
             // Format hex dengan padding 4 digit
