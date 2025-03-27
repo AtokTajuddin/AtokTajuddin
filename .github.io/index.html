@@ -117,8 +117,14 @@
             panel.innerHTML = generateCode(30);
         });
     </script>
-    <!-- Letakkan di dalam file index.html, tepat sebelum penutup </body> -->
-<<script>
+    <div class="visitor-counter">
+        <div class="pulse-dot"></div>
+        <div>
+            <p id="visitCount">0x0000</p>
+            <small>VISITORS COUNT</small>
+        </div>
+    </div>
+<script>
     // Visitor counter untuk GitHub Pages
     const updateCounter = async () => {
         try {
