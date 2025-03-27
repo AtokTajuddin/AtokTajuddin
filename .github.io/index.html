@@ -118,32 +118,26 @@
         });
     </script>
     <!-- Letakkan di dalam file index.html, tepat sebelum penutup </body> -->
-<script>
-    // Visitor counter dengan CountAPI
-    <!-- Visitor Counter -->
-  <div class="visitor-counter">
-    <div class="pulse-dot"></div>
-    <div>
-      <p id="visitCount">0x0000</p>
-      <small>VISITORS COUNT</small>
-    </div>
-  </div>
-
-  <!-- Script Counter -->
-  <script>
+<<script>
+    // Visitor counter untuk GitHub Pages
     const updateCounter = async () => {
-      try {
-        const repoName = "AtokTajuddin.github.io"; // Sesuaikan!
-        const hit = await fetch(`https://api.countapi.xyz/hit/AtokTajuddin/${repoName}`);
-        const get = await fetch(`https://api.countapi.xyz/get/AtokTajuddin/${repoName}`);
-        const data = await get.json();
-        document.getElementById('visitCount').textContent = `0x${data.value.toString(16).padStart(4, '0')}`;
-      } catch (error) {
-        console.error("Error:", error);
-      }
+        try {
+            // Gunakan format: hit/[username]/[repo-name]
+            const hitResponse = await fetch('https://api.countapi.xyz/hit/AtokTajuddin/AtokTajuddin.github.io');
+            const getResponse = await fetch('https://api.countapi.xyz/get/AtokTajuddin/AtokTajuddin.github.io');
+            const data = await getResponse.json();
+            
+            // Format hex 4-digit (contoh: 0x03A1)
+            const hexCount = data.value.toString(16).padStart(4, '0').toUpperCase();
+            document.getElementById('visitCount').textContent = `0x${hexCount}`;
+        } catch (error) {
+            console.error('Error updating counter:', error);
+            document.getElementById('visitCount').textContent = "0xDEAD"; // Fallback error
+        }
     };
+
     updateCounter();
-  </script>
+</script>
 </script>
 </body>
 </html>
