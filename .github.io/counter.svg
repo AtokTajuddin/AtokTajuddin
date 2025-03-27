@@ -40,7 +40,7 @@
     <text x="300" y="160" font-family="'Courier New', monospace" font-size="48" 
           fill="url(#neonGradient)" text-anchor="middle" dominant-baseline="middle"
           filter="url(#textGlitch)" id="counter">
-      <tspan>0x0000</tspan>
+      <tspan>0x03e9</tspan>
     </text>
     
     <!-- Animated Border -->
