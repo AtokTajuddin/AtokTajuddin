@@ -34,10 +34,6 @@ I am currently pursuing my tertiary education at the Sepuluh Nopember Institute 
  [![GitHub Activity Graph](https://github-readme-activity-graph.vercel.app/graph?username=AtokTajuddin&theme=react-dark&area=true&hide_border=true&custom_title=Contribution%20Graph&line=61DAFB&bg_color=00000000&redirect=true)](https://github.com/AtokTajuddin)
  #
  
- 
- ### ✍️ Random Dev Quote
- ![](https://quotes-github-readme.vercel.app/api?type=horizontal&theme=radical)
- 
  ### 🔝 Top Contributed Repo
  ![](https://github-contributor-stats.vercel.app/api?username=AtokTajuddin&limit=5&theme=dark&combine_all_yearly_contributions=true)
  
