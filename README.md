@@ -22,16 +22,16 @@
 <!-- About Me Section -->
 <div align="center">
   <p align="center" width="600">
-    I am an undergraduate at <b>Sepuluh Nopember Institute of Technology (ITS)</b>.<br>
+    I am an undergraduate Information Technology at <b>Sepuluh Nopember Institute of Technology (ITS)</b>.<br>
     I speak in binary, dream in code, and build systems from the ground up.<br>
-    Exploring the depths of <b>Kernel, Drivers, & Exploitation</b>.
+    Exploring the depths of <b>Low-Level & Systems Programming,Cybersecurity Engineering,Hardware Programming,Fulstack Engineering,Mobile Programming,Blockchain</b>.
   </p>
 </div>
 
 <br>
 
 <!-- Tech Stack: Digabung jadi satu (Unified), Style: For-The-Badge (Kotak Tebal) -->
-<h3 align="center">⚡ ARSENAL & TECHNOLOGIES</h3>
+<h3 align="center"> ARSENAL & TECHNOLOGIES</h3>
 <div align="center">
   <!-- Languages -->
   <img src="https://img.shields.io/badge/C-00599C?style=for-the-badge&logo=c&logoColor=white" />
