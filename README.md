@@ -56,10 +56,6 @@
 
 <div align="center">
 
-  <a href="https://github.com/ashutosh00710/github-readme-streak-stats">
-    <img src="https://github-readme-streak-stats.herokuapp.com/?user=atoktajuddin&theme=black-ice&hide_border=true&stroke=16F74F&ring=16F74F&fire=16F74F&currStreakLabel=16F74F" alt="GitHub Streak" />
-  </a>
-  
   <br/><br/>
 
   <a href="https://github.com/anuraghazra/github-readme-stats">
