@@ -1,116 +1,85 @@
-
----
-
-## 📊 **System Metrics & Performance**
-
+<!-- Header Typing Effect: Memberikan kesan Terminal/Hacker -->
 <div align="center">
-
-| **GitHub Stats** | **Language Distribution** |
-|:---:|:---:|
-| [![GitHub Stats](https://github-readme-stats.vercel.app/api?username=AtokTajuddin&show_icons=true&theme=cyberpunk&title_color=00f5ff&icon_color=ff00ff&text_color=ffff00&bg_color=0a0a0a&hide_border=true&hide=issues&include_all_commits=true&card_width=420)](https://github.com/AtokTajuddin) | [![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=AtokTajuddin&layout=donut-vertical&theme=cyberpunk&hide_border=true&langs_count=12&size_weight=0.6&count_weight=0.4&custom_title=Most%20Used%20Languages%20(All-rounder)&card_width=420&title_color=00f5ff&text_color=ffff00&bg_color=0a0a0a)](https://github.com/AtokTajuddin) |
-
+  <a href="https://git.io/typing-svg">
+    <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=600&size=35&duration=3000&pause=1000&color=39FF14&center=true&vCenter=true&width=435&lines=SYSTEM+INITIALIZED...;USER%3A+Atok+Tajuddin;ROLE%3A+Low-Level+%26+Systems+Engineer;STATUS%3A+Compiling+Knowledge...;TARGET%3A+Cybersecurity+%26+Hardware" alt="Typing SVG" />
+  </a>
 </div>
 
----
+<br>
 
-## 🔝 **Top Contributed Repositories**
-
+<!-- Social: GitHub Only (Sesuai Request) -->
 <div align="center">
-
-[![Repository 1](https://github-readme-stats.vercel.app/api/pin/?username=AtokTajuddin&repo=repo-name-1&theme=cyberpunk&title_color=00f5ff&text_color=ffff00&bg_color=0a0a0a&hide_border=true&description_lines_count=3)](https://github.com/AtokTajuddin/repo-name-1)
-[![Repository 2](https://github-readme-stats.vercel.app/api/pin/?username=AtokTajuddin&repo=repo-name-2&theme=cyberpunk&title_color=00f5ff&text_color=ffff00&bg_color=0a0a0a&hide_border=true&description_lines_count=3)](https://github.com/AtokTajuddin/repo-name-2)
-
-[![Repository 3](https://github-readme-stats.vercel.app/api/pin/?username=AtokTajuddin&repo=repo-name-3&theme=cyberpunk&title_color=00f5ff&text_color=ffff00&bg_color=0a0a0a&hide_border=true&description_lines_count=3)](https://github.com/AtokTajuddin/repo-name-3)
-[![Repository 4](https://github-readme-stats.vercel.app/api/pin/?username=AtokTajuddin&repo=repo-name-4&theme=cyberpunk&title_color=00f5ff&text_color=ffff00&bg_color=0a0a0a&hide_border=true&description_lines_count=3)](https://github.com/AtokTajuddin/repo-name-4)
-
+  <a href="https://github.com/AtokTajuddin">
+    <img src="https://img.shields.io/github/followers/AtokTajuddin?label=Follow&style=social" height="30"/>
+  </a>
+  <a href="https://github.com/AtokTajuddin?tab=repositories">
+    <img src="https://img.shields.io/github/stars/AtokTajuddin?style=social" height="30"/>
+  </a>
 </div>
 
----
+<br>
 
-## 🛠️ **Cyber Arsenal – Tech Stack**
-
-### **💾 Core Languages**
-![C](https://img.shields.io/badge/C-00599C?style=for-the-badge&logo=c&logoColor=00f5ff) ![C++](https://img.shields.io/badge/C++-00599C?style=for-the-badge&logo=c%2B%2B&logoColor=ff00ff) ![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=ffff00) ![Go](https://img.shields.io/badge/Go-00ADD8?style=for-the-badge&logo=go&logoColor=white) ![Rust](https://img.shields.io/badge/Rust-000000?style=for-the-badge&logo=rust&logoColor=ffaa00) ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black) ![Bash](https://img.shields.io/badge/Bash-121011?style=for-the-badge&logo=gnu-bash&logoColor=white)
-
-### **⚡ Frontend & Web**
-![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB) ![Vue.js](https://img.shields.io/badge/Vue.js-35495E?style=for-the-badge&logo=vuedotjs&logoColor=4FC08D) ![TailwindCSS](https://img.shields.io/badge/TailwindCSS-38B2AC?style=for-the-badge&logo=tailwind&logoColor=00f5ff) ![Astro](https://img.shields.io/badge/Astro-2C2052?style=for-the-badge&logo=astro&logoColor=ff00ff)
-
-### **🔒 Backend & Infrastructure**
-![Express.js](https://img.shields.io/badge/Express.js-404D59?style=for-the-badge&logo=express&logoColor=61DAFB) ![Node.js](https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&logo=node.js&logoColor=white) ![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=00f5ff) ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-336791?style=for-the-badge&logo=postgresql&logoColor=ffff00)
-
-### **🤖 AI/ML & Data**
-![Python](https://img.shields.io/badge/Pandas-150458?style=for-the-badge&logo=pandas&logoColor=ffaa00) ![NumPy](https://img.shields.io/badge/NumPy-013243?style=for-the-badge&logo=numpy&logoColor=ffff00) ![scikit-learn](https://img.shields.io/badge/scikit_learn-F7931E?style=for-the-badge&logo=scikit-learn&logoColor=00f5ff)
-
-### **🔐 Security & Networking**
-![Linux](https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=000) ![Git](https://img.shields.io/badge/Git-F05033?style=for-the-badge&logo=git&logoColor=white) ![Kali](https://img.shields.io/badge/Kali%20Linux-557C94?style=for-the-badge&logo=kalilinux&logoColor=white) ![GNS3](https://img.shields.io/badge/GNS3-004B9E?style=for-the-badge&logo=cisco&logoColor=00f5ff)
-
----
-
-## 📈 **Activity & Contribution Heatmap**
-
+<!-- About Me Section -->
 <div align="center">
-
-![GitHub Activity Graph](https://github-readme-activity-graph.vercel.app/graph?username=AtokTajuddin&theme=cyberpunk&area=true&hide_border=true&custom_title=Neural%20Activity%20Matrix&line=00f5ff&bg_color=0a0a0a&redirect=true)
-
+  <p align="center" width="600">
+    I am an undergraduate Information Technology at <b>Sepuluh Nopember Institute of Technology (ITS)</b>.<br>
+    I speak in binary, dream in code, and build systems from the ground up.<br>
+    Exploring the depths of <b>Low-Level & Systems Programming,Cybersecurity Engineering,Hardware Programming,Fulstack Engineering,Mobile Programming,Blockchain</b>.
+  </p>
 </div>
 
----
+<br>
 
-## 📚 **Learning Domains**
-
-| Domain | Status | Tools | Notes |
-|--------|--------|-------|-------|
-| **Cybersecurity** | 🔴 Active | Kali Linux, Burp Suite, Metasploit | Penetration testing & vulnerability research |
-| **Low-Level Programming** | 🔴 Active | GCC, LLVM, Assembly, GAS | Systems programming & reverse engineering |
-| **DevOps** | 🟡 Developing | Docker, Kubernetes, CI/CD | Infrastructure automation |
-| **AI/ML** | 🟡 Developing | TensorFlow, scikit-learn, Pandas | Data science & model training |
-| **Network Engineering** | 🟢 Proficient | GNS3, MikroTik, Cisco | Network design & simulation |
-| **Reverse Engineering** | 🟡 Developing | IDA Pro, Ghidra, x64dbg | Malware analysis & binary exploitation |
-
----
-
-## 🐍 **Quantum Snake – Repo Activity**
-
+<!-- Tech Stack: Digabung jadi satu (Unified), Style: For-The-Badge (Kotak Tebal) -->
+<h3 align="center"> ARSENAL & TECHNOLOGIES</h3>
 <div align="center">
-
-![GitHub Snake](https://raw.githubusercontent.com/AtokTajuddin/AtokTajuddin/output/github-snake.svg)
-
+  <!-- Languages -->
+  <img src="https://img.shields.io/badge/C-00599C?style=for-the-badge&logo=c&logoColor=white" />
+  <img src="https://img.shields.io/badge/C%2B%2B-00599C?style=for-the-badge&logo=c%2B%2B&logoColor=white" />
+  <img src="https://img.shields.io/badge/rust-000000?style=for-the-badge&logo=rust&logoColor=white" />
+  <img src="https://img.shields.io/badge/Go-00ADD8?style=for-the-badge&logo=go&logoColor=white" />
+  <img src="https://img.shields.io/badge/Assembly-555555?style=for-the-badge&logo=intel&logoColor=white" />
+  <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" />
+  <img src="https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white" />
+  
+  <!-- Web & Frameworks -->
+  <img src="https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white" />
+  <img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" />
+  <img src="https://img.shields.io/badge/Astro-BC52EE?style=for-the-badge&logo=astro&logoColor=white" />
+  <img src="https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white" />
+  <img src="https://img.shields.io/badge/Firebase-039BE5?style=for-the-badge&logo=Firebase&logoColor=white" />
+  
+  <!-- System & Tools -->
+  <img src="https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black" />
+  <img src="https://img.shields.io/badge/Shell_Script-121011?style=for-the-badge&logo=gnu-bash&logoColor=white" />
+  <img src="https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white" />
+  <img src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white" />
+  <img src="https://img.shields.io/badge/CMake-064F8C?style=for-the-badge&logo=cmake&logoColor=white" />
+  <img src="https://img.shields.io/badge/PostgreSQL-316192?style=for-the-badge&logo=postgresql&logoColor=white" />
 </div>
 
----
+<br>
+<br>
 
-## 💡 **Notable Projects Showcase**
-
+<!-- Stats Section: Menggunakan Layout Compact agar tidak berantakan -->
 <div align="center">
-
-### 🎯 **Project Highlights**
-- **Security Lab Infrastructure** - GNS3-based network simulation with firewall hardening
-- **Malware Analysis Framework** - Custom RE tools for binary analysis
-- **ML Security Pipeline** - Anomaly detection using Python/scikit-learn
-- **Fullstack Finance App** - React + TypeScript + Gemini AI integration
-
-**More projects:** [Visit GitHub Profile](https://github.com/AtokTajuddin)
-
+  <!-- Language Breakdown (All Rounder) -->
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=AtokTajuddin&theme=react&hide_border=true&layout=compact&langs_count=10&bg_color=0D1117&title_color=58A6FF&text_color=C9D1D9" alt="Top Langs" />
 </div>
 
----
-
-## 🏆 **Achievements & Certifications**
-
-- 🎖️ **CTF Competitor** - Active in capture-the-flag competitions
-- 🔬 **Lab Enthusiast** - Advanced network simulation & security testing
-- 🚀 **Open Source Contributor** - Regular contributor to security tools
-- 📊 **All-rounder Engineer** - Polyglot programmer across multiple domains
-
----
+<br>
 
 <div align="center">
+  <!-- GitHub Activity Graph (Gaya Neon/React Dark) -->
+  <img src="https://github-readme-activity-graph.vercel.app/graph?username=AtokTajuddin&theme=react-dark&area=true&hide_border=true&hide_title=true" width="100%" />
+</div>
 
-### 🌐 **Let's Connect**
-[![Discord](https://img.shields.io/badge/Discord-Join%20Server-7289DA?style=flat-square&logo=discord&logoColor=00f5ff)](https://discord.gg/0xvigilante)
-[![GitHub](https://img.shields.io/badge/GitHub-Profile-181717?style=flat-square&logo=github&logoColor=00f5ff)](https://github.com/AtokTajuddin)
+<br>
 
----
+<!-- Snake Animation: Footer yang clean -->
+<div align="center">
+  <img src="https://raw.githubusercontent.com/AtokTajuddin/AtokTajuddin/output/github-snake.svg" alt="snake" width="100%" />
+</div>
 
-**💻 Built with Cyberpunk Theme | Last Updated:** `2025-11-24`
-
+<!-- Invisible Pixel untuk spacing -->
+<br><br>
