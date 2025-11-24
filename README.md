@@ -82,5 +82,32 @@
   <img src="https://raw.githubusercontent.com/AtokTajuddin/AtokTajuddin/output/github-snake.svg" alt="snake" width="100%" />
 </div>
 
+<div align="center">
+
+  <a href="https://git.io/typing-svg">
+    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&pause=1000&color=16F74F&center=true&vCenter=true&width=435&lines=SYSTEM+INITIALIZED...;USER+%3A+atoktajuddin;Always+thirsty+for+new+knowledge;Interest+In+%3A+;Cybersecurity+(Offsec);Fullstack+Engineering;Mobile+Programming;Hardware+Programming;Low+Level+Programming" alt="Typing SVG" />
+  </a>
+
+  <br/>
+
+  <a href="https://github.com/ashutosh00710/github-readme-streak-stats">
+    <img src="https://github-readme-streak-stats.herokuapp.com/?user=atoktajuddin&theme=black-ice&hide_border=true&stroke=16F74F&ring=16F74F&fire=16F74F&currStreakLabel=16F74F" alt="GitHub Streak" />
+  </a>
+
+  <br/>
+
+  <a href="https://github.com/anuraghazra/github-readme-stats">
+    <img src="https://github-readme-stats.vercel.app/api?username=atoktajuddin&show_icons=true&theme=transparent&hide_border=true&title_color=16F74F&text_color=16F74F&icon_color=16F74F&bg_color=000000" alt="GitHub Stats" />
+  </a>
+
+  <br/>
+
+  <a href="https://github.com/anuraghazra/github-readme-stats">
+    <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=atoktajuddin&layout=compact&theme=transparent&hide_border=true&title_color=16F74F&text_color=16F74F" alt="Top Langs" />
+  </a>
+
+</div>
+
 <!-- Invisible Pixel untuk spacing -->
 <br><br>
+
