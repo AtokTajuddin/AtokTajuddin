@@ -1,5 +1,7 @@
-<!-- Header Typing Effect: Memberikan kesan Terminal/Hacker -->
-[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&pause=1000&color=16F74F&width=435&lines=SYSTEM+INITIALIZED...;USER+%3A+atoktajuddin;Always+thirsty+for+new+knowledge;Interest+In+%3A+;Cybersecurity+(Offsec);Fullstack+Engineering;Mobile+Programming;Hardware+Programming;Low+Level+Programming)](https://git.io/typing-svg)
+<div align="center">
+[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&size=24&pause=1000&color=16F74F&width=600&center=true&lines=SYSTEM+INITIALIZED...;USER+%3A+AtokTajuddin;Always+thirsty+for+new+knowledge;Interest+In+Cybersecurity;Fullstack+Engineering;Mobile+Programming;Hardware+Programming;Low+Level+Programming)](https://git.io/typing-svg)
+</div>
+
 
 <br>
 
