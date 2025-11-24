@@ -1,85 +1,98 @@
-<!-- Header Typing Effect: Memberikan kesan Terminal/Hacker -->
 <div align="center">
-  <a href="https://git.io/typing-svg">
-    <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=600&size=35&duration=3000&pause=1000&color=39FF14&center=true&vCenter=true&width=435&lines=SYSTEM+INITIALIZED...;USER%3A+Atok+Tajuddin;ROLE%3A+Low-Level+%26+Systems+Engineer;STATUS%3A+Compiling+Knowledge...;TARGET%3A+Cybersecurity+%26+Hardware" alt="Typing SVG" />
-  </a>
+
+<!-- Header & Typing Animation -->
+
+<!-- WIDTH diatur ke 500px agar text panjang tidak terpotong -->
+
+<img src="https://www.google.com/search?q=https://readme-typing-svg.herokuapp.com%3Ffont%3DFira%2BCode%26weight%3D600%26size%3D24%26duration%3D3000%26pause%3D1000%26color%3D20C20E%26center%3Dtrue%26vCenter%3Dtrue%26width%3D500%26lines%3DLow-Level%2B%2526%2BSystems%2BProgramming%3BCybersecurity%2BEngineering%3BHardware%2BProgramming%2B(HDL)%3BFullstack%2BEngineersing%3BMobile%2BProgramming" alt="Typing SVG" />
+
+<!-- Socials -->
+
+<a href="https://discord.gg/0xvigilante">
+<img src="https://www.google.com/search?q=https://img.shields.io/badge/Discord-7289DA%3Fstyle%3Dfor-the-badge%26logo%3Ddiscord%26logoColor%3Dwhite" alt="Discord"/>
+</a>
+<a href="https://github.com/AtokTajuddin">
+<img src="https://www.google.com/search?q=https://img.shields.io/badge/GitHub-100000%3Fstyle%3Dfor-the-badge%26logo%3Dgithub%26logoColor%3Dwhite" alt="GitHub"/>
+</a>
+
 </div>
 
-<br>
+💫 About Me
 
-<!-- Social: GitHub Only (Sesuai Request) -->
-<div align="center">
-  <a href="https://github.com/AtokTajuddin">
-    <img src="https://img.shields.io/github/followers/AtokTajuddin?label=Follow&style=social" height="30"/>
-  </a>
-  <a href="https://github.com/AtokTajuddin?tab=repositories">
-    <img src="https://img.shields.io/github/stars/AtokTajuddin?style=social" height="30"/>
-  </a>
-</div>
+I am currently pursuing my tertiary education at the Sepuluh Nopember Institute of Technology (ITS). I have a deep passion for understanding how computers work at a fundamental level, from hardware description to high-level application deployment.
 
-<br>
+🛠️ Technical Arsenal
 
-<!-- About Me Section -->
-<div align="center">
-  <p align="center" width="600">
-    I am an undergraduate Information Technology at <b>Sepuluh Nopember Institute of Technology (ITS)</b>.<br>
-    I speak in binary, dream in code, and build systems from the ground up.<br>
-    Exploring the depths of <b>Low-Level & Systems Programming,Cybersecurity Engineering,Hardware Programming,Fulstack Engineering,Mobile Programming,Blockchain</b>.
-  </p>
-</div>
+<!-- Pengelompokan Badges agar Rapi -->
 
-<br>
+Languages
 
-<!-- Tech Stack: Digabung jadi satu (Unified), Style: For-The-Badge (Kotak Tebal) -->
-<h3 align="center"> ARSENAL & TECHNOLOGIES</h3>
-<div align="center">
-  <!-- Languages -->
-  <img src="https://img.shields.io/badge/C-00599C?style=for-the-badge&logo=c&logoColor=white" />
-  <img src="https://img.shields.io/badge/C%2B%2B-00599C?style=for-the-badge&logo=c%2B%2B&logoColor=white" />
-  <img src="https://img.shields.io/badge/rust-000000?style=for-the-badge&logo=rust&logoColor=white" />
-  <img src="https://img.shields.io/badge/Go-00ADD8?style=for-the-badge&logo=go&logoColor=white" />
-  <img src="https://img.shields.io/badge/Assembly-555555?style=for-the-badge&logo=intel&logoColor=white" />
-  <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" />
-  <img src="https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white" />
-  
-  <!-- Web & Frameworks -->
-  <img src="https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white" />
-  <img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" />
-  <img src="https://img.shields.io/badge/Astro-BC52EE?style=for-the-badge&logo=astro&logoColor=white" />
-  <img src="https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white" />
-  <img src="https://img.shields.io/badge/Firebase-039BE5?style=for-the-badge&logo=Firebase&logoColor=white" />
-  
-  <!-- System & Tools -->
-  <img src="https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black" />
-  <img src="https://img.shields.io/badge/Shell_Script-121011?style=for-the-badge&logo=gnu-bash&logoColor=white" />
-  <img src="https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white" />
-  <img src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white" />
-  <img src="https://img.shields.io/badge/CMake-064F8C?style=for-the-badge&logo=cmake&logoColor=white" />
-  <img src="https://img.shields.io/badge/PostgreSQL-316192?style=for-the-badge&logo=postgresql&logoColor=white" />
-</div>
 
-<br>
-<br>
 
-<!-- Stats Section: Menggunakan Layout Compact agar tidak berantakan -->
-<div align="center">
-  <!-- Language Breakdown (All Rounder) -->
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=AtokTajuddin&theme=react&hide_border=true&layout=compact&langs_count=10&bg_color=0D1117&title_color=58A6FF&text_color=C9D1D9" alt="Top Langs" />
-</div>
+Web & Frameworks
 
-<br>
+
+
+Systems, Tools & DevOps
+
+
+
+Data Science & AI
+
+
+
+📊 GitHub Analytics
+
+<!-- Layout Tabel untuk Statistik Sebelah-Menyebelah -->
 
 <div align="center">
-  <!-- GitHub Activity Graph (Gaya Neon/React Dark) -->
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=AtokTajuddin&theme=react-dark&area=true&hide_border=true&hide_title=true" width="100%" />
+<table>
+<tr>
+<td align="center" width="50%">
+<!-- GitHub Stats (General) -->
+<img src="https://www.google.com/search?q=https://github-readme-stats.vercel.app/api%3Fusername%3DAtokTajuddin%26show_icons%3Dtrue%26theme%3Dtokyonight%26hide_border%3Dtrue%26count_private%3Dtrue" />
+</td>
+<td align="center" width="50%">
+<!-- Top Languages (Percentage) -->
+<img src="https://www.google.com/search?q=https://github-readme-stats.vercel.app/api/top-langs/%3Fusername%3DAtokTajuddin%26layout%3Dcompact%26theme%3Dtokyonight%26hide_border%3Dtrue%26langs_count%3D8" />
+</td>
+</tr>
+</table>
+
+<!-- Streak Stats -->
+
+<img src="https://www.google.com/search?q=https://github-readme-streak-stats.herokuapp.com/%3Fuser%3DAtokTajuddin%26theme%3Dtokyonight%26hide_border%3Dtrue" />
+
 </div>
 
-<br>
+🐍 Contribution Graph
 
-<!-- Snake Animation: Footer yang clean -->
 <div align="center">
-  <img src="https://raw.githubusercontent.com/AtokTajuddin/AtokTajuddin/output/github-snake.svg" alt="snake" width="100%" />
+
+<!-- Snake Animation -->
+
+<img src="https://raw.githubusercontent.com/AtokTajuddin/AtokTajuddin/output/github-snake.svg" alt="Snake Animation" width="100%"/>
+
+
+
+
+
+<!-- Activity Graph -->
+
+<a href="https://github.com/AtokTajuddin">
+<img src="https://www.google.com/search?q=https://github-readme-activity-graph.vercel.app/graph%3Fusername%3DAtokTajuddin%26theme%3Dreact-dark%26area%3Dtrue%26hide_border%3Dtrue%26custom_title%3DActivity%2520Graph%26line%3D61DAFB%26bg_color%3D00000000" width="100%"/>
+</a>
+
 </div>
 
-<!-- Invisible Pixel untuk spacing -->
-<br><br>
+<div align="center">
+<img src="https://www.google.com/search?q=https://quotes-github-readme.vercel.app/api%3Ftype%3Dhorizontal%26theme%3Dtokyonight" />
+
+
+
+
+
+<a href="https://visitcount.itsvg.in">
+<img src="https://www.google.com/search?q=https://visitcount.itsvg.in/api%3Fid%3DAtokTajuddin%26icon%3D5%26color%3D2" />
+</a>
+</div>
