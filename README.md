@@ -1,7 +1,8 @@
 <div align="center">
-[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&size=24&pause=1200&color=16F74F&width=850&height=100&center=true&vCenter=true&multiline=true&lines=Cybersecurity+(Offsec);Fullstack+Engineering;Mobile+Programming;Hardware+Programming;Low+Level+Programming;Always+Learning...)](https://git.io/typing-svg)
+  <a href="https://git.io/typing-svg">
+    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&pause=1000&color=16F74F&center=true&vCenter=true&width=435&lines=SYSTEM+INITIALIZED...;USER+%3A+atoktajuddin;Always+thirsty+for+new+knowledge;Interest+In+%3A+;Cybersecurity+(Offsec);Fullstack+Engineering;Mobile+Programming;Hardware+Programming;Low+Level+Programming" alt="Typing SVG" />
+  </a>
 </div>
-
 
 
 
