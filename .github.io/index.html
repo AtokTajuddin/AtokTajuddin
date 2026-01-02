@@ -1,133 +1,630 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="id">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>💻 Profile</title>
-    <script src="https://cdn.tailwindcss.com"></script>
+    <title>AtokTajuddin | System Programmer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;600;700&display=swap" rel="stylesheet">
+    
     <style>
-        @keyframes code-scroll {
-            0% {
-                transform: translateY(0);
-            }
-
-            100% {
-                transform: translateY(-50%);
-            }
+        /* --- CSS VARIABLES & RESET --- */
+        :root {
+            --primary: #16F74F;
+            --primary-glow: rgba(22, 247, 79, 0.5);
+            --bg-dark: #050505;
+            --glass-bg: rgba(12, 12, 12, 0.7); 
+            --text-main: #e0e0e0;
+            --text-muted: #888888;
+            --font-mono: 'Fira Code', monospace;
         }
 
-        @keyframes glitch {
-            0% {
-                text-shadow: 2px 0 #00ff9d, -2px 0 #ff00c1;
-            }
-
-            100% {
-                text-shadow: -2px 0 #00ff9d, 2px 0 #ff00c1;
-            }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
         }
 
-        .cyber-terminal {
-            background: linear-gradient(45deg, #0a0a0a, #001a0f);
-            box-shadow: 0 0 30px #00ff9d33;
+        html {
+            scroll-behavior: smooth;
         }
 
-        .code-animation {
-            animation: code-scroll 20s linear infinite;
-            background: repeating-linear-gradient(#001a0f, #001a0f 24px, #00ff9d25 24px, #00ff9d25 48px);
+        body {
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            background-color: var(--bg-dark);
+            color: var(--text-main);
+            font-family: var(--font-mono);
+            overflow-x: hidden;
+            line-height: 1.6;
         }
 
-        .cyber-glitch {
-            animation: glitch 0.3s infinite alternate;
+        /* --- BACKGROUND ANIMATION --- */
+        #bg-canvas {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            opacity: 0.3; 
         }
 
-        .laptop-body {
-            background: linear-gradient(45deg, #1a1a1a, #333);
-            border-radius: 8px 8px 0 0;
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 2rem;
+            position: relative;
+            z-index: 1;
         }
 
-        .laptop-screen {
-            background: radial-gradient(circle, #001a0f 0%, #000 100%);
-            box-shadow: inset 0 0 20px #00ff9d33;
+        /* --- HEADER --- */
+        header {
+            min-height: 80vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        .profile-img-container {
+            position: relative;
+            width: 150px;
+            height: 150px;
+            margin-bottom: 1.5rem;
+        }
+
+        .profile-img {
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 2px solid var(--primary);
+            box-shadow: 0 0 25px var(--primary-glow);
+            position: relative;
+            z-index: 2;
+            background: #000;
+        }
+
+        .profile-glow {
+            position: absolute;
+            top: -8px;
+            left: -8px;
+            width: 166px;
+            height: 166px;
+            border-radius: 50%;
+            border: 2px dashed var(--primary);
+            opacity: 0.6;
+            animation: spin 10s linear infinite;
+            z-index: 1;
+        }
+
+        .typing-container {
+            font-size: 1.1rem;
+            color: var(--primary);
+            margin-bottom: 1rem;
+            background: rgba(0,0,0,0.8);
+            padding: 0.5rem 1.5rem;
+            border-radius: 4px;
+            border: 1px solid rgba(22, 247, 79, 0.3);
+            display: inline-block;
+            box-shadow: 0 0 15px rgba(22, 247, 79, 0.1);
+        }
+
+        .cursor {
+            display: inline-block;
+            width: 10px;
+            background-color: var(--primary);
+            animation: blink 1s infinite;
+        }
+
+        h1 {
+            font-size: 3rem;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            text-shadow: 0 0 15px rgba(22,247,79,0.3);
+        }
+
+        .subtitle {
+            color: var(--text-muted);
+            margin-bottom: 2rem;
+            max-width: 600px;
+            background: rgba(10,10,10, 0.8);
+            padding: 1.5rem;
+            border-radius: 8px;
+            backdrop-filter: blur(5px);
+            border-left: 3px solid var(--primary);
+        }
+
+        .social-buttons {
+            display: flex;
+            gap: 1rem;
+            margin-bottom: 2rem;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .social-link {
+            text-decoration: none;
+            padding: 0.8rem 2rem;
+            border: 1px solid var(--primary);
+            color: var(--primary);
+            border-radius: 4px;
+            transition: all 0.3s ease;
+            font-size: 0.9rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            background: rgba(0,0,0,0.6);
+        }
+
+        .social-link:hover {
+            background: var(--primary);
+            color: #000;
+            box-shadow: 0 0 25px var(--primary);
+            font-weight: bold;
+        }
+
+        section {
+            margin: 5rem 0;
+            opacity: 0;
+            transform: translateY(30px);
+            transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+        }
+
+        section.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .section-title {
+            font-size: 1.6rem;
+            color: var(--primary);
+            margin-bottom: 2.5rem;
+            border-bottom: 2px solid var(--primary-glow);
+            padding-bottom: 0.5rem;
+            display: inline-block;
+            text-shadow: 0 0 10px var(--primary-glow);
+            letter-spacing: 2px;
+        }
+
+        .about-card {
+            background: var(--glass-bg);
+            backdrop-filter: blur(16px);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            padding: 2.5rem;
+            border-radius: 12px;
+            text-align: center;
+            box-shadow: 0 20px 50px rgba(0,0,0,0.5);
+        }
+
+        .highlight {
+            color: var(--primary);
+            font-weight: bold;
+            text-shadow: 0 0 5px var(--primary-glow);
+        }
+
+        /* --- TECH STACK REDESIGNED (CARD STYLE) --- */
+        .tech-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(110px, 1fr));
+            gap: 1.2rem;
+        }
+
+        /* Desain kartu teknologi baru: Kotak Kaca + Icon SVG + Teks */
+        .tech-item {
+            background: rgba(15, 15, 15, 0.8);
+            backdrop-filter: blur(10px);
+            border: 1px solid #222;
+            padding: 1.2rem 0.5rem; /* Padding atas bawah */
+            border-radius: 8px;
+            display: flex;
+            flex-direction: column; /* Icon di atas, teks di bawah */
+            align-items: center;
+            justify-content: center;
+            gap: 0.8rem;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .tech-item:hover {
+            transform: translateY(-5px);
+            border-color: var(--primary);
+            box-shadow: 0 5px 20px rgba(22, 247, 79, 0.15);
+            background: #000;
+        }
+
+        /* Mengatur ukuran Icon SVG */
+        .tech-item img {
+            width: 40px; 
+            height: 40px;
+            transition: transform 0.3s ease, filter 0.3s ease;
+            /* Memberikan efek glow pada icon SVG */
+            filter: drop-shadow(0 0 2px var(--primary)); 
+        }
+
+        .tech-item:hover img {
+            transform: scale(1.1);
+            filter: drop-shadow(0 0 8px var(--primary));
+        }
+
+        /* Mengatur Teks Nama Teknologi */
+        .tech-name {
+            font-size: 0.85rem;
+            font-weight: 600;
+            color: #ccc;
+            letter-spacing: 0.5px;
+        }
+
+        .tech-item:hover .tech-name {
+            color: var(--primary);
+            text-shadow: 0 0 5px var(--primary-glow);
+        }
+
+        /* --- STATS --- */
+        .stats-container {
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+            align-items: center;
+        }
+        .stats-wrapper {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 1.5rem;
+        }
+        .stats-card {
+            background: var(--glass-bg);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            padding: 1rem;
+            border-radius: 12px;
+            transition: transform 0.3s ease, border-color 0.3s ease;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.5);
+            display: flex;
+            justify-content: center;
+        }
+        .stats-card:hover {
+            transform: scale(1.02);
+            border-color: var(--primary);
+        }
+        .stats-card img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        /* --- SNAKE --- */
+        .snake-container {
+            width: 100%;
+            overflow-x: auto;
+            background: #020202;
+            padding: 1.5rem;
+            border-radius: 12px;
+            text-align: center;
+            border: 1px solid #333;
+            box-shadow: inset 0 0 30px rgba(0,0,0,0.9);
+        }
+        .snake-container::-webkit-scrollbar { height: 6px; }
+        .snake-container::-webkit-scrollbar-track { background: #000; }
+        .snake-container::-webkit-scrollbar-thumb { background-color: var(--primary); border-radius: 3px; }
+        .snake-container img {
+            min-width: 800px;
+            filter: drop-shadow(0 0 4px var(--primary));
+        }
+
+        footer {
+            text-align: center;
+            padding: 3rem 0;
+            color: var(--text-muted);
+            font-size: 0.8rem;
+            border-top: 1px solid #222;
+            margin-top: 5rem;
+            background: linear-gradient(to top, rgba(0,0,0,0.8), transparent);
+        }
+
+        @keyframes spin { 0% { transform: rotate(0deg); } 100% { transform: rotate(360deg); } }
+        @keyframes blink { 0%, 100% { opacity: 1; } 50% { opacity: 0; } }
+
+        @media (max-width: 768px) {
+            h1 { font-size: 2.2rem; }
+            .tech-grid { grid-template-columns: repeat(3, 1fr); gap: 0.8rem; }
+            .snake-container img { min-width: 100%; }
+        }
+        @media (max-width: 480px) {
+            .tech-grid { grid-template-columns: repeat(2, 1fr); }
         }
     </style>
 </head>
+<body>
 
-<body class="bg-gray-900 min-h-screen flex items-center justify-center overflow-hidden">
-    <!-- Animated Code Panel -->
-    <div class="fixed left-8 bottom-8 w-64 h-96 cyber-terminal rounded-lg overflow-hidden">
-        <div class="code-animation h-[200%] p-4 font-mono text-green-400 text-sm">
-            <!-- Generated code will be inserted here -->
-        </div>
-    </div>
+    <canvas id="bg-canvas"></canvas>
 
-    <!-- Main Content -->
-    <div class="max-w-2xl w-full space-y-8 p-8 relative z-30">
-        <!-- Visit Counter -->
-        <div class="bg-gray-800/90 backdrop-blur rounded-lg p-4 shadow-2xl hover:shadow-green-500/20 transition-all">
-            <div class="flex items-center space-x-4">
-                <div class="bg-green-500/20 p-3 rounded-full">
-                    <div class="w-6 h-6 bg-green-500 rounded-full animate-pulse"></div>
-                </div>
-                <div>
-                    <p class="text-2xl font-bold text-green-400" id="visitCount">0</p>
-                    <p class="text-sm text-gray-400">VISITORS COUNT</p>
-                </div>
+    <div class="container">
+        
+        <header>
+            <div class="profile-img-container">
+                <img src="https://picsum.photos/seed/atoktajuddin/200/200" alt="Profile" class="profile-img">
+                <div class="profile-glow"></div>
             </div>
-        </div>
 
-        <!-- Profile Section -->
-        <div class="text-center space-y-6">
-            <h1 class="text-5xl font-bold text-green-400 cyber-glitch">Code Enthusiast</h1>
-            <p class="text-lg text-gray-300 font-mono">>_ I am programmer</p>
-        </div>
-    </div>
-
-    <!-- 3D Laptop -->
-    <div class="fixed right-8 bottom-8 w-96 h-64 laptop-body transform perspective-1000 rotate-x-12">
-        <div class="laptop-screen h-full p-4 rounded-t-lg">
-            <div class="h-full bg-black/80 rounded overflow-hidden">
-                <div class="code-animation h-[200%] p-4 font-mono text-green-400 text-sm">
-                    <!-- Generated code will be inserted here -->
-                </div>
+            <div class="typing-container">
+                <span id="typing-text"></span><span class="cursor">_</span>
             </div>
-        </div>
-        <div class="h-4 bg-gray-800 rounded-b-lg"></div>
+
+            <h1>AtokTajuddin</h1>
+            
+            <p class="subtitle">
+                I am an undergraduate Information Technology at <b>Sepuluh Nopember Institute of Technology (ITS)</b>.<br>
+                I speak in binary, dream in code, and build systems from the ground up.
+            </p>
+
+            <div class="social-buttons">
+                <a href="https://github.com/AtokTajuddin" class="social-link">Follow on GitHub</a>
+                <a href="https://github.com/AtokTajuddin?tab=repositories" class="social-link">Star Repositories</a>
+            </div>
+        </header>
+
+        <main>
+            <section id="about">
+                <div class="about-card">
+                    <h2 class="section-title">FIELD OF STUDIES</h2>
+                    <p style="font-size: 1.1rem;">
+                        Exploring the depths of <span class="highlight">Low-Level & Systems Programming</span>, 
+                        <span class="highlight">Cybersecurity Engineering</span>, 
+                        <span class="highlight">Hardware Programming</span>, 
+                        <span class="highlight">Fullstack Engineering</span>, and 
+                        <span class="highlight">Mobile Programming</span>.
+                    </p>
+                </div>
+            </section>
+
+            <section id="technologies">
+                <div align="center">
+                    <h2 class="section-title">ARSENAL & TECHNOLOGIES</h2>
+                    <div class="tech-grid">
+                        
+                        <div class="tech-item">
+                            <img src="https://cdn.simpleicons.org/c/16F74F" alt="C">
+                            <span class="tech-name">C</span>
+                        </div>
+                        <div class="tech-item">
+                            <img src="https://cdn.simpleicons.org/cplusplus/16F74F" alt="C++">
+                            <span class="tech-name">C++</span>
+                        </div>
+                        <div class="tech-item">
+                            <img src="https://cdn.simpleicons.org/rust/16F74F" alt="Rust">
+                            <span class="tech-name">Rust</span>
+                        </div>
+                        <div class="tech-item">
+                            <img src="https://cdn.simpleicons.org/go/16F74F" alt="Go">
+                            <span class="tech-name">Go</span>
+                        </div>
+                        <div class="tech-item">
+                            <img src="https://cdn.simpleicons.org/intel/16F74F" alt="Assembly">
+                            <span class="tech-name">Assembly</span>
+                        </div>
+                        
+                        <div class="tech-item">
+                            <img src="https://cdn.simpleicons.org/python/16F74F" alt="Python">
+                            <span class="tech-name">Python</span>
+                        </div>
+                        <div class="tech-item">
+                            <img src="https://cdn.simpleicons.org/openjdk/16F74F" alt="Java">
+                            <span class="tech-name">Java</span>
+                        </div>
+
+                        <div class="tech-item">
+                            <img src="https://cdn.simpleicons.org/typescript/16F74F" alt="TypeScript">
+                            <span class="tech-name">TypeScript</span>
+                        </div>
+                        <div class="tech-item">
+                            <img src="https://cdn.simpleicons.org/react/16F74F" alt="React">
+                            <span class="tech-name">React</span>
+                        </div>
+                        <div class="tech-item">
+                            <img src="https://cdn.simpleicons.org/astro/16F74F" alt="Astro">
+                            <span class="tech-name">Astro</span>
+                        </div>
+                        <div class="tech-item">
+                            <img src="https://cdn.simpleicons.org/tailwindcss/16F74F" alt="Tailwind">
+                            <span class="tech-name">Tailwind</span>
+                        </div>
+                        <div class="tech-item">
+                            <img src="https://cdn.simpleicons.org/firebase/16F74F" alt="Firebase">
+                            <span class="tech-name">Firebase</span>
+                        </div>
+
+                        <div class="tech-item">
+                            <img src="https://cdn.simpleicons.org/linux/16F74F" alt="Linux">
+                            <span class="tech-name">Linux</span>
+                        </div>
+                        <div class="tech-item">
+                            <img src="https://cdn.simpleicons.org/gnubash/16F74F" alt="Shell">
+                            <span class="tech-name">Shell</span>
+                        </div>
+                        <div class="tech-item">
+                            <img src="https://cdn.simpleicons.org/docker/16F74F" alt="Docker">
+                            <span class="tech-name">Docker</span>
+                        </div>
+                        <div class="tech-item">
+                            <img src="https://cdn.simpleicons.org/git/16F74F" alt="Git">
+                            <span class="tech-name">Git</span>
+                        </div>
+                        <div class="tech-item">
+                            <img src="https://cdn.simpleicons.org/cmake/16F74F" alt="CMake">
+                            <span class="tech-name">CMake</span>
+                        </div>
+                        <div class="tech-item">
+                            <img src="https://cdn.simpleicons.org/postgresql/16F74F" alt="PostgreSQL">
+                            <span class="tech-name">PostgreSQL</span>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+            <section id="stats">
+                <div align="center">
+                    <h2 class="section-title">SYSTEM STATISTICS</h2>
+                    <div class="stats-container">
+                        <div class="stats-wrapper">
+                            <div class="stats-card">
+                                <a href="https://github.com/anuraghazra/github-readme-stats">
+                                    <img src="https://github-readme-stats.vercel.app/api?username=atoktajuddin&show_icons=true&theme=dark&hide_border=true&title_color=16F74F&text_color=ffffff&icon_color=16F74F&bg_color=0d0d0d" alt="GitHub Stats" />
+                                </a>
+                            </div>
+                        </div>
+                        <div class="stats-wrapper">
+                            <div class="stats-card">
+                                <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=AtokTajuddin&theme=dark&hide_border=true&layout=compact&langs_count=10&title_color=16F74F&text_color=ffffff&icon_color=16F74F&bg_color=0d0d0d" alt="Top Langs" />
+                            </div>
+                        </div>
+                        <div class="stats-wrapper" style="width: 100%;">
+                            <div class="stats-card" style="width: 100%; max-width: 800px;">
+                                <img src="https://github-readme-activity-graph.vercel.app/graph?username=AtokTajuddin&theme=react-dark&area=true&hide_border=true&hide_title=true&color=16F74F&bg_color=0d0d0d" width="100%" alt="Activity Graph" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="contributions">
+                <div align="center">
+                    <h2 class="section-title">ACTIVITY LOG</h2>
+                    <div class="snake-container">
+                        <img src="https://raw.githubusercontent.com/AtokTajuddin/AtokTajuddin/output/github-snake.svg" alt="snake animation" />
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <p>&copy; <span id="year"></span> AtokTajuddin.</p>
+        </footer>
     </div>
 
     <script>
-        // Visit Counter
-        document.addEventListener('DOMContentLoaded', () => {
-            let count = parseInt(localStorage.getItem('visitCount')) || 0;
-            count++;
-            localStorage.setItem('visitCount', count);
-            document.getElementById('visitCount').textContent = count;
-        });
+        // --- 1. TYPING EFFECT ---
+        const textElement = document.getElementById('typing-text');
+        const lines = [
+            "SYSTEM INITIALIZED...",
+            "USER : atoktajuddin",
+            "Always thirsty for new knowledge",
+            "Interest In :",
+            "Cybersecurity (Offsec)",
+            "Fullstack Engineering",
+            "Mobile Programming",
+            "Hardware Programming",
+            "Low Level Programming"
+        ];
 
-        // Random Code Generator
-        function generateCode(lines = 50) {
-            const characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ$%&/#1234567890{}[]=+-_';
-            const commands = ['git commit', 'npm start', 'sudo apt-get', 'docker build', 'curl -X GET'];
+        let lineIndex = 0;
+        let charIndex = 0;
+        let isDeleting = false;
+        let delay = 1000;
 
-            return Array.from({
-                length: lines
-            }, (_, i) => {
-                if (i % 5 === 0) {
-                    return `<span class="text-blue-400">${commands[Math.floor(Math.random() * commands.length)]}</span>`;
-                }
-                return Array.from({
-                    length: 40
-                }, () =>
-                    characters[Math.floor(Math.random() * characters.length)]
-                ).join('');
-            }).join('<br>');
+        function typeEffect() {
+            const currentLine = lines[lineIndex];
+            if (isDeleting) {
+                textElement.textContent = currentLine.substring(0, charIndex - 1);
+                charIndex--;
+                delay = 50;
+            } else {
+                textElement.textContent = currentLine.substring(0, charIndex + 1);
+                charIndex++;
+                delay = 80;
+            }
+            if (!isDeleting && charIndex === currentLine.length) {
+                isDeleting = true;
+                delay = 2000;
+            } else if (isDeleting && charIndex === 0) {
+                isDeleting = false;
+                lineIndex = (lineIndex + 1) % lines.length;
+                delay = 500;
+            }
+            setTimeout(typeEffect, delay);
         }
 
-        // Insert generated code to all code panels
-        document.querySelectorAll('.code-animation').forEach(panel => {
-            panel.innerHTML = generateCode(30);
-        });
+        // --- 2. CANVAS ANIMATION ---
+        const canvas = document.getElementById('bg-canvas');
+        const ctx = canvas.getContext('2d');
+        let width, height, particles = [];
+
+        function resizeCanvas() {
+            width = window.innerWidth;
+            height = window.innerHeight;
+            canvas.width = width;
+            canvas.height = height;
+        }
+
+        class Particle {
+            constructor() {
+                this.x = Math.random() * width;
+                this.y = Math.random() * height;
+                this.vx = (Math.random() - 0.5) * 0.5;
+                this.vy = (Math.random() - 0.5) * 0.5;
+                this.size = Math.random() * 2 + 0.5;
+            }
+            update() {
+                this.x += this.vx; this.y += this.vy;
+                if (this.x < 0 || this.x > width) this.vx *= -1;
+                if (this.y < 0 || this.y > height) this.vy *= -1;
+            }
+            draw() {
+                ctx.fillStyle = 'rgba(22, 247, 79, 0.4)';
+                ctx.beginPath();
+                ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
+                ctx.fill();
+            }
+        }
+
+        function initParticles() {
+            particles = [];
+            const particleCount = Math.min(Math.floor(width * 0.08), 80);
+            for (let i = 0; i < particleCount; i++) particles.push(new Particle());
+        }
+
+        function animateParticles() {
+            ctx.clearRect(0, 0, width, height);
+            for (let i = 0; i < particles.length; i++) {
+                particles[i].update(); particles[i].draw();
+                for (let j = i; j < particles.length; j++) {
+                    const dx = particles[i].x - particles[j].x;
+                    const dy = particles[i].y - particles[j].y;
+                    const distance = Math.sqrt(dx * dx + dy * dy);
+                    if (distance < 140) {
+                        ctx.strokeStyle = `rgba(22, 247, 79, ${0.12 - distance/1200})`;
+                        ctx.lineWidth = 0.5;
+                        ctx.beginPath();
+                        ctx.moveTo(particles[i].x, particles[i].y);
+                        ctx.lineTo(particles[j].x, particles[j].y);
+                        ctx.stroke();
+                    }
+                }
+            }
+            requestAnimationFrame(animateParticles);
+        }
+
+        // --- 3. SCROLL REVEAL ---
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) entry.target.classList.add('visible');
+            });
+        }, { threshold: 0.1 });
+
+        document.querySelectorAll('section').forEach(section => observer.observe(section));
+
+    
+        window.addEventListener('resize', () => { resizeCanvas(); initParticles(); });
+        document.getElementById('year').textContent = new Date().getFullYear();
+        resizeCanvas(); initParticles(); animateParticles(); typeEffect();
     </script>
 </body>
-
 </html>
