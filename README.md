@@ -44,41 +44,45 @@ $ cat /etc/identity
 ---
 
 <!-- SECTION: Tech Stack -->
-## > stack.list
+## > arsenal
 
-### Languages
-<p align="left">
-  <img src="https://img.shields.io/badge/C-000000?style=for-the-badge&logo=c&logoColor=16F74F" alt="C" />
-  <img src="https://img.shields.io/badge/C%2B%2B-000000?style=for-the-badge&logo=cplusplus&logoColor=16F74F" alt="C++" />
-  <img src="https://img.shields.io/badge/Rust-000000?style=for-the-badge&logo=rust&logoColor=16F74F" alt="Rust" />
-  <img src="https://img.shields.io/badge/Go-000000?style=for-the-badge&logo=go&logoColor=16F74F" alt="Go" />
-  <img src="https://img.shields.io/badge/Assembly-000000?style=for-the-badge&logo=intel&logoColor=16F74F" alt="Assembly" />
-  <img src="https://img.shields.io/badge/Python-000000?style=for-the-badge&logo=python&logoColor=16F74F" alt="Python" />
-  <img src="https://img.shields.io/badge/Java-000000?style=for-the-badge&logo=openjdk&logoColor=16F74F" alt="Java" />
-</p>
-
-### Frontend and Web
-<p align="left">
-  <img src="https://img.shields.io/badge/TypeScript-000000?style=for-the-badge&logo=typescript&logoColor=16F74F" alt="TypeScript" />
-  <img src="https://img.shields.io/badge/React-000000?style=for-the-badge&logo=react&logoColor=16F74F" alt="React" />
-  <img src="https://img.shields.io/badge/Anime.js-000000?style=for-the-badge&logo=javascript&logoColor=16F74F" alt="Anime.js" />
-  <img src="https://img.shields.io/badge/Tailwind%20CSS-000000?style=for-the-badge&logo=tailwindcss&logoColor=16F74F" alt="Tailwind CSS" />
-</p>
-
-### Backend and Data
-<p align="left">
-  <img src="https://img.shields.io/badge/Firebase-000000?style=for-the-badge&logo=firebase&logoColor=16F74F" alt="Firebase" />
-  <img src="https://img.shields.io/badge/PostgreSQL-000000?style=for-the-badge&logo=postgresql&logoColor=16F74F" alt="PostgreSQL" />
-</p>
-
-### DevOps and Tools
-<p align="left">
-  <img src="https://img.shields.io/badge/Linux-000000?style=for-the-badge&logo=linux&logoColor=16F74F" alt="Linux" />
-  <img src="https://img.shields.io/badge/Shell-000000?style=for-the-badge&logo=gnu-bash&logoColor=16F74F" alt="Shell" />
-  <img src="https://img.shields.io/badge/Docker-000000?style=for-the-badge&logo=docker&logoColor=16F74F" alt="Docker" />
-  <img src="https://img.shields.io/badge/Git-000000?style=for-the-badge&logo=git&logoColor=16F74F" alt="Git" />
-  <img src="https://img.shields.io/badge/CMake-000000?style=for-the-badge&logo=cmake&logoColor=16F74F" alt="CMake" />
-</p>
+<table align="center" border="0" cellpadding="14" cellspacing="0">
+  <tr>
+    <td align="right" valign="middle"><sub><b>LANGUAGES</b></sub></td>
+    <td align="left" valign="middle">
+      <a href="https://skillicons.dev"><img src="https://skillicons.dev/icons?i=c,cpp,rust,go,python,java,bash&theme=dark" alt="Languages: C, C++, Rust, Go, Python, Java, Bash" /></a>
+    </td>
+  </tr>
+  <tr>
+    <td align="right" valign="middle"><sub><b>FRONTEND</b></sub></td>
+    <td align="left" valign="middle">
+      <a href="https://skillicons.dev"><img src="https://skillicons.dev/icons?i=ts,react,tailwind&theme=dark" alt="Frontend: TypeScript, React, Tailwind CSS" />
+      <img src="https://img.shields.io/badge/Anime.js-0E0E0E?style=flat-square&logo=javascript&logoColor=16F74F&labelColor=0E0E0E" height="48" alt="Anime.js" /></a>
+    </td>
+  </tr>
+  <tr>
+    <td align="right" valign="middle"><sub><b>BACKEND&nbsp;&middot;&nbsp;DATA</b></sub></td>
+    <td align="left" valign="middle">
+      <a href="https://skillicons.dev"><img src="https://skillicons.dev/icons?i=nodejs,express,postgres,redis,firebase&theme=dark" alt="Backend and Data: Node.js, Express, PostgreSQL, Redis, Firebase" /></a>
+    </td>
+  </tr>
+  <tr>
+    <td align="right" valign="middle"><sub><b>SYSTEMS&nbsp;&middot;&nbsp;DEVOPS</b></sub></td>
+    <td align="left" valign="middle">
+      <a href="https://skillicons.dev"><img src="https://skillicons.dev/icons?i=linux,docker,git,cmake,vim,arduino&theme=dark" alt="Systems and DevOps: Linux, Docker, Git, CMake, Vim, Arduino" /></a>
+    </td>
+  </tr>
+  <tr>
+    <td align="right" valign="middle"><sub><b>SEC&nbsp;&middot;&nbsp;NET</b></sub></td>
+    <td align="left" valign="middle">
+      <img src="https://img.shields.io/badge/Burp_Suite-0E0E0E?style=flat-square&logo=burpsuite&logoColor=16F74F&labelColor=0E0E0E" height="48" alt="Burp Suite" />
+      <img src="https://img.shields.io/badge/Wireshark-0E0E0E?style=flat-square&logo=wireshark&logoColor=16F74F&labelColor=0E0E0E" height="48" alt="Wireshark" />
+      <img src="https://img.shields.io/badge/Ghidra-0E0E0E?style=flat-square&logo=ghidra&logoColor=16F74F&labelColor=0E0E0E" height="48" alt="Ghidra" />
+      <img src="https://img.shields.io/badge/Nmap-0E0E0E?style=flat-square&logo=gnometerminal&logoColor=16F74F&labelColor=0E0E0E" height="48" alt="Nmap" />
+      <img src="https://img.shields.io/badge/Metasploit-0E0E0E?style=flat-square&logo=metasploit&logoColor=16F74F&labelColor=0E0E0E" height="48" alt="Metasploit" />
+    </td>
+  </tr>
+</table>
 
 ---
 
@@ -120,7 +124,7 @@ $ cat /etc/identity
 
 <div align="center">
 
-  <img src="https://streak-stats.demolab.com?user=AtokTajuddin&background=000000&stroke=16F74F&ring=16F74F&fire=16F74F&currStreakLabel=16F74F&sideLabels=16F74F&dates=FFFFFF&currStreakNum=FFFFFF&sideNums=FFFFFF&hide_border=true" alt="Streak Card for AtokTajuddin showing current and longest contribution streak" width="60%" />
+  <img src="https://nirzak-streak-stats.vercel.app?user=AtokTajuddin&background=000000&stroke=16F74F&ring=16F74F&fire=16F74F&currStreakLabel=16F74F&sideLabels=16F74F&dates=FFFFFF&currStreakNum=FFFFFF&sideNums=FFFFFF&hide_border=true" alt="Streak Card for AtokTajuddin showing current and longest contribution streak" width="60%" />
 
 </div>
 
@@ -137,7 +141,7 @@ $ cat /etc/identity
 
 <div align="center">
 
-  <img src="https://raw.githubusercontent.com/AtokTajuddin/AtokTajuddin/output/github-snake.svg" alt="AtokTajuddin contribution snake animation traversing the contribution grid" width="100%" />
+  <img src="https://raw.githubusercontent.com/AtokTajuddin/AtokTajuddin/output/github-contribution-grid-snake-dark.svg" alt="AtokTajuddin contribution snake animation traversing the contribution grid" width="100%" />
 
 </div>
 
@@ -173,8 +177,8 @@ $ broadcast --to "hackers, builders, researchers"
 <div align="center">
 
   <a href="https://github.com/AtokTajuddin"><img src="https://img.shields.io/badge/GitHub-000000?style=for-the-badge&logo=github&logoColor=16F74F" alt="GitHub profile of AtokTajuddin" /></a>
-  <a href="https://www.linkedin.com/in/atoktajuddin"><img src="https://img.shields.io/badge/LinkedIn-000000?style=for-the-badge&logo=linkedin&logoColor=16F74F" alt="LinkedIn profile of Atok Tajuddin" /></a>
-  <a href="mailto:atoktajuddin@example.com"><img src="https://img.shields.io/badge/Email-000000?style=for-the-badge&logo=protonmail&logoColor=16F74F" alt="Email Atok Tajuddin" /></a>
+  <a href="https://profile.hackthebox.com/profile/019cfed2-60ce-730f-a565-c66876cfda10"><img src="https://img.shields.io/badge/Hack%20The%20Box-000000?style=for-the-badge&logo=hackthebox&logoColor=16F74F" alt="Hack The Box profile of AtokTajuddin" /></a>
+  <a href="https://tryhackme.com/p/Dre4mCatch3r"><img src="https://img.shields.io/badge/TryHackMe-000000?style=for-the-badge&logo=tryhackme&logoColor=16F74F" alt="TryHackMe profile Dre4mCatch3r" /></a>
 
 </div>
 
