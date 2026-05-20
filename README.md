@@ -117,14 +117,14 @@ $ cat /etc/identity
 
 <div align="center">
 
-  <img src="https://github-readme-stats.vercel.app/api?username=AtokTajuddin&show_icons=true&hide_border=true&bg_color=000000&title_color=16F74F&icon_color=16F74F&text_color=FFFFFF&ring_color=16F74F" alt="Stats Card for AtokTajuddin showing public commit, PR, issue, and star totals" width="48%" />
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=AtokTajuddin&layout=compact&hide_border=true&langs_count=10&bg_color=000000&title_color=16F74F&icon_color=16F74F&text_color=FFFFFF" alt="Top Languages Card for AtokTajuddin showing the most-used languages across public repositories" width="48%" />
+  <img src="https://github-readme-stats.vercel.app/api?username=AtokTajuddin&show_icons=true&hide_border=true&bg_color=000000&title_color=16F74F&icon_color=16F74F&text_color=FFFFFF&ring_color=16F74F&cache_seconds=14400" alt="Stats Card for AtokTajuddin showing public commit, PR, issue, and star totals" width="48%" />
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=AtokTajuddin&layout=compact&hide_border=true&langs_count=10&bg_color=000000&title_color=16F74F&icon_color=16F74F&text_color=FFFFFF&cache_seconds=14400" alt="Top Languages Card for AtokTajuddin showing the most-used languages across public repositories" width="48%" />
 
 </div>
 
 <div align="center">
 
-  <img src="https://nirzak-streak-stats.vercel.app?user=AtokTajuddin&background=000000&stroke=16F74F&ring=16F74F&fire=16F74F&currStreakLabel=16F74F&sideLabels=16F74F&dates=FFFFFF&currStreakNum=FFFFFF&sideNums=FFFFFF&hide_border=true" alt="Streak Card for AtokTajuddin showing current and longest contribution streak" width="60%" />
+  <img src="https://streak-stats.demolab.com?user=AtokTajuddin&theme=transparent&background=000000&stroke=16F74F&ring=16F74F&fire=16F74F&currStreakLabel=16F74F&sideLabels=16F74F&dates=FFFFFF&currStreakNum=FFFFFF&sideNums=FFFFFF&hide_border=true&cache_seconds=14400" alt="Streak Card for AtokTajuddin showing current and longest contribution streak" width="60%" />
 
 </div>
 
@@ -141,7 +141,7 @@ $ cat /etc/identity
 
 <div align="center">
 
-  <img src="https://raw.githubusercontent.com/AtokTajuddin/AtokTajuddin/output/github-contribution-grid-snake-dark.svg" alt="AtokTajuddin contribution snake animation traversing the contribution grid" width="100%" />
+  <img src="https://raw.githubusercontent.com/AtokTajuddin/AtokTajuddin/output/github-snake.svg" alt="AtokTajuddin contribution snake animation traversing the contribution grid" width="100%" />
 
 </div>
 
