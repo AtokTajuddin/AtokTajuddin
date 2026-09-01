@@ -1,196 +1,145 @@
-<!-- SECTION: Header -->
+<!-- SECTION: Banner -->
 <div align="center">
-
-  <a href="https://github.com/AtokTajuddin">
-    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&pause=1200&color=16F74F&center=true&vCenter=true&width=580&height=42&lines=%24+booting+atoktajuddin.kernel...;%24+whoami+%E2%86%92+systems+engineer+%2F+red+teamer;%24+uptime+%E2%86%92+building+from+the+ground+up;%24+focus+%E2%86%92+low-level+%C2%B7+red+team+%C2%B7+backend+%C2%B7+networking" alt="atoktajuddin terminal banner: systems engineer, red teamer, building from the ground up" />
-  </a>
-
-  ### Atok Tajuddin
-
-  Information Technology undergraduate at **Sepuluh Nopember Institute of Technology (ITS)**
-
-  <a href="https://github.com/AtokTajuddin"><img src="https://img.shields.io/github/followers/AtokTajuddin?label=Follow&style=for-the-badge&color=000000&labelColor=000000&logo=github&logoColor=16F74F" alt="Follow AtokTajuddin on GitHub" /></a>
-  <a href="https://github.com/AtokTajuddin?tab=repositories"><img src="https://img.shields.io/github/stars/AtokTajuddin?style=for-the-badge&color=000000&labelColor=000000&logo=github&logoColor=16F74F" alt="Total stars across AtokTajuddin repositories" /></a>
-
+  <img src="https://raw.githubusercontent.com/AtokTajuddin/AtokTajuddin/master/assets/banner.svg?v=1" width="100%" alt="Atok Tajuddin - Systems Engineer and Red Teamer" />
 </div>
 
----
+<div align="center">
+  <a href="https://github.com/AtokTajuddin"><img src="https://img.shields.io/github/followers/AtokTajuddin?label=followers&style=for-the-badge&color=0E1424&labelColor=0E1424&logo=github&logoColor=22D3EE" alt="GitHub followers" /></a>
+  <a href="https://github.com/AtokTajuddin?tab=repositories"><img src="https://img.shields.io/github/stars/AtokTajuddin?style=for-the-badge&color=0E1424&labelColor=0E1424&logo=github&logoColor=A855F7" alt="Total stars" /></a>
+  <img src="https://komarev.com/ghpvc/?username=AtokTajuddin&color=34D399&style=for-the-badge&base=0&label=views" alt="Profile views" />
+</div>
 
-<!-- SECTION: About -->
-## > whoami
+<img src="https://raw.githubusercontent.com/AtokTajuddin/AtokTajuddin/master/assets/divider-neon.svg?v=1" width="100%" alt="" />
 
-```sh
-$ cat /etc/identity
-> Information Technology undergraduate, Sepuluh Nopember Institute of Technology (ITS).
-> I speak in binary, dream in code, and build systems from the ground up.
-> Engineering across the stack, from silicon-adjacent code to user-facing surfaces.
-```
+<!-- SECTION: whoami -->
+<img src="https://raw.githubusercontent.com/AtokTajuddin/AtokTajuddin/master/assets/sect-whoami.svg?v=1" width="100%" alt="whoami" />
 
-- Working close to the metal: memory layout, syscalls, and toolchains hold the same fascination as a clean API.
-- Building disciplined software with a security mindset, treating every input as untrusted by default.
-- Documenting design decisions and tradeoffs because future maintainers deserve more than commit history.
+<div align="center">
+  <img src="https://raw.githubusercontent.com/AtokTajuddin/AtokTajuddin/master/assets/hero.svg?v=1" width="100%" alt="Terminal: atok tajuddin, systems engineer and red teamer, low-level, offensive security, backend, networking" />
+</div>
 
----
+<div align="center">
+  <sub>Information Technology undergraduate at <b>Institut Teknologi Sepuluh Nopember (ITS)</b> &middot; Surabaya, Indonesia</sub>
+</div>
 
-<!-- SECTION: Focus -->
-## > focus.areas
+<img src="https://raw.githubusercontent.com/AtokTajuddin/AtokTajuddin/master/assets/divider-neon.svg?v=1" width="100%" alt="" />
 
-- Low-Level and Systems Programming
-- Cybersecurity Engineering (Red Teaming, Reverse Engineering)
-- Hardware Programming
-- Backend Engineering
-- Networking and System Architecture
+<!-- SECTION: focus -->
+<img src="https://raw.githubusercontent.com/AtokTajuddin/AtokTajuddin/master/assets/sect-focus.svg?v=1" width="100%" alt="focus areas" />
 
----
-
-<!-- SECTION: Tech Stack -->
-## > arsenal
-
-<table align="center" border="0" cellpadding="14" cellspacing="0">
+<table align="center" border="0">
   <tr>
-    <td align="right" valign="middle"><sub><b>LANGUAGES</b></sub></td>
-    <td align="left" valign="middle">
-      <a href="https://skillicons.dev"><img src="https://skillicons.dev/icons?i=c,cpp,rust,go,python,java,bash&theme=dark" alt="Languages: C, C++, Rust, Go, Python, Java, Bash" /></a>
+    <td valign="top" width="60%">
+      <img src="https://raw.githubusercontent.com/AtokTajuddin/AtokTajuddin/master/assets/focus-list.svg?v=1" width="100%" alt="Focus: low-level and systems programming, offensive security, hardware programming, backend engineering, networking and architecture" />
     </td>
-  </tr>
-  <tr>
-    <td align="right" valign="middle"><sub><b>FRONTEND</b></sub></td>
-    <td align="left" valign="middle">
-      <a href="https://skillicons.dev"><img src="https://skillicons.dev/icons?i=ts,react,tailwind&theme=dark" alt="Frontend: TypeScript, React, Tailwind CSS" />
-      <img src="https://img.shields.io/badge/Anime.js-0E0E0E?style=flat-square&logo=javascript&logoColor=16F74F&labelColor=0E0E0E" height="48" alt="Anime.js" /></a>
-    </td>
-  </tr>
-  <tr>
-    <td align="right" valign="middle"><sub><b>BACKEND&nbsp;&middot;&nbsp;DATA</b></sub></td>
-    <td align="left" valign="middle">
-      <a href="https://skillicons.dev"><img src="https://skillicons.dev/icons?i=nodejs,express,postgres,redis,firebase&theme=dark" alt="Backend and Data: Node.js, Express, PostgreSQL, Redis, Firebase" /></a>
-    </td>
-  </tr>
-  <tr>
-    <td align="right" valign="middle"><sub><b>SYSTEMS&nbsp;&middot;&nbsp;DEVOPS</b></sub></td>
-    <td align="left" valign="middle">
-      <a href="https://skillicons.dev"><img src="https://skillicons.dev/icons?i=linux,docker,git,cmake,vim,arduino&theme=dark" alt="Systems and DevOps: Linux, Docker, Git, CMake, Vim, Arduino" /></a>
-    </td>
-  </tr>
-  <tr>
-    <td align="right" valign="middle"><sub><b>SEC&nbsp;&middot;&nbsp;NET</b></sub></td>
-    <td align="left" valign="middle">
-      <img src="https://img.shields.io/badge/Burp_Suite-0E0E0E?style=flat-square&logo=burpsuite&logoColor=16F74F&labelColor=0E0E0E" height="48" alt="Burp Suite" />
-      <img src="https://img.shields.io/badge/Wireshark-0E0E0E?style=flat-square&logo=wireshark&logoColor=16F74F&labelColor=0E0E0E" height="48" alt="Wireshark" />
-      <img src="https://img.shields.io/badge/Ghidra-0E0E0E?style=flat-square&logo=ghidra&logoColor=16F74F&labelColor=0E0E0E" height="48" alt="Ghidra" />
-      <img src="https://img.shields.io/badge/Nmap-0E0E0E?style=flat-square&logo=gnometerminal&logoColor=16F74F&labelColor=0E0E0E" height="48" alt="Nmap" />
-      <img src="https://img.shields.io/badge/Metasploit-0E0E0E?style=flat-square&logo=metasploit&logoColor=16F74F&labelColor=0E0E0E" height="48" alt="Metasploit" />
+    <td valign="top" width="40%">
+      <img src="https://raw.githubusercontent.com/AtokTajuddin/AtokTajuddin/master/assets/radar.svg?v=1" width="100%" alt="Radar sweep: recon, web, binary, network, hardware, backend" />
     </td>
   </tr>
 </table>
 
----
+<img src="https://raw.githubusercontent.com/AtokTajuddin/AtokTajuddin/master/assets/divider-neon.svg?v=1" width="100%" alt="" />
 
-<!-- SECTION: Featured Projects -->
-## > featured.projects
-
-<p align="center">
-  <a href="https://github.com/AtokTajuddin?tab=repositories">
-    <img src="https://github-readme-stats.vercel.app/api/pin/?username=AtokTajuddin&repo=AtokTajuddin&bg_color=000000&title_color=16F74F&icon_color=16F74F&text_color=FFFFFF&border_color=16F74F&hide_border=false" alt="Featured project: AtokTajuddin profile repository" />
-  </a>
-</p>
-
-<p align="center">
-  <em>&gt; Featured work in progress — pinned repositories will surface here as projects mature.</em>
-</p>
-
----
-
-<!-- SECTION: Currently Working On -->
-## > ps aux
-
-- Building low-level utilities in C and Rust to internalize memory layout, syscalls, and concurrency primitives.
-- Studying red team tradecraft and reverse engineering through binary exploitation and malware analysis labs.
-- Shipping backend services in Go and TypeScript on PostgreSQL, with Firebase for auth and realtime workloads.
-- Exploring bare-metal Hardware Programming on ARM microcontrollers using C and Assembly.
-- Learning Networking and System Architecture fundamentals: TCP/IP internals, routing, and distributed system design.
-
----
-
-<!-- SECTION: Stats -->
-## > system.stats
+<!-- SECTION: arsenal -->
+<img src="https://raw.githubusercontent.com/AtokTajuddin/AtokTajuddin/master/assets/sect-arsenal.svg?v=1" width="100%" alt="arsenal" />
 
 <div align="center">
-
-  <img src="https://github-readme-stats.vercel.app/api?username=AtokTajuddin&show_icons=true&hide_border=true&bg_color=000000&title_color=16F74F&icon_color=16F74F&text_color=FFFFFF&ring_color=16F74F&cache_seconds=14400" alt="Stats Card for AtokTajuddin showing public commit, PR, issue, and star totals" width="48%" />
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=AtokTajuddin&layout=compact&hide_border=true&langs_count=10&bg_color=000000&title_color=16F74F&icon_color=16F74F&text_color=FFFFFF&cache_seconds=14400" alt="Top Languages Card for AtokTajuddin showing the most-used languages across public repositories" width="48%" />
-
-</div>
-
-<div align="center">
-
-  <img src="https://streak-stats.demolab.com?user=AtokTajuddin&theme=transparent&background=000000&stroke=16F74F&ring=16F74F&fire=16F74F&currStreakLabel=16F74F&sideLabels=16F74F&dates=FFFFFF&currStreakNum=FFFFFF&sideNums=FFFFFF&hide_border=true&cache_seconds=14400" alt="Streak Card for AtokTajuddin showing current and longest contribution streak" width="60%" />
-
-</div>
-
----
-
-<!-- SECTION: Activity -->
-## > contribution.activity
-
-<div align="center">
-
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=AtokTajuddin&bg_color=000000&color=16F74F&line=16F74F&point=FFFFFF&hide_border=true&area=true" alt="AtokTajuddin contribution activity graph over the last year" width="100%" />
-
-</div>
-
-<div align="center">
-
-  <img src="https://raw.githubusercontent.com/AtokTajuddin/AtokTajuddin/output/github-snake.svg" alt="AtokTajuddin contribution snake animation traversing the contribution grid" width="100%" />
-
-</div>
-
----
-
-<!-- SECTION: Trophies -->
-## > achievements
-
-<div align="center">
-
-  <img src="https://github-profile-trophy.vercel.app/?username=AtokTajuddin&theme=matrix&no-frame=true&column=4&margin-w=10&margin-h=10" alt="AtokTajuddin GitHub trophies showing unlocked profile achievements" />
-
-</div>
-
----
-
-<!-- SECTION: Collab -->
-## > collab.invite
-
-```sh
-$ broadcast --to "hackers, builders, researchers"
-> Open to teaming up on bug bounty hunts, CTFs (the for-fun ones especially),
-> red team / cybersec study circles, and small research crews working at the
-> intersection of AI and security. Hit me up — let's break things, learn loud,
-> and ship something interesting.
-```
-
----
-
-<!-- SECTION: Connect -->
-## > connect
-
-<div align="center">
-
-  <a href="https://github.com/AtokTajuddin"><img src="https://img.shields.io/badge/GitHub-000000?style=for-the-badge&logo=github&logoColor=16F74F" alt="GitHub profile of AtokTajuddin" /></a>
-  <a href="https://profile.hackthebox.com/profile/019cfed2-60ce-730f-a565-c66876cfda10"><img src="https://img.shields.io/badge/Hack%20The%20Box-000000?style=for-the-badge&logo=hackthebox&logoColor=16F74F" alt="Hack The Box profile of AtokTajuddin" /></a>
-  <a href="https://tryhackme.com/p/Dre4mCatch3r"><img src="https://img.shields.io/badge/TryHackMe-000000?style=for-the-badge&logo=tryhackme&logoColor=16F74F" alt="TryHackMe profile Dre4mCatch3r" /></a>
-
-</div>
-
----
-
-<!-- SECTION: Footer -->
-<div align="center">
-
-  <img src="https://komarev.com/ghpvc/?username=AtokTajuddin&color=16F74F&style=for-the-badge&base=0&label=AtokTajuddin+profile+views" alt="AtokTajuddin profile views counter" />
-
+  <img src="https://raw.githubusercontent.com/AtokTajuddin/AtokTajuddin/master/assets/marquee.svg?v=1" width="100%" alt="Tech stack ticker: C, C++, Rust, Go, Python, Bash, TypeScript, React, Node.js, PostgreSQL, Redis, Docker, Linux, Nmap, Burp Suite, Ghidra, Metasploit, Wireshark, Assembly, Git" />
   <br/><br/>
+  <a href="https://skillicons.dev"><img src="https://skillicons.dev/icons?i=c,cpp,rust,go,python,java,bash,ts,react&theme=dark" alt="Languages: C, C++, Rust, Go, Python, Java, Bash, TypeScript, React" /></a>
+  <br/>
+  <a href="https://skillicons.dev"><img src="https://skillicons.dev/icons?i=nodejs,postgres,redis,docker,linux,git,cmake,vim,arduino&theme=dark" alt="Tooling: Node.js, PostgreSQL, Redis, Docker, Linux, Git, CMake, Vim, Arduino" /></a>
+  <br/><br/>
+  <img src="https://img.shields.io/badge/Burp_Suite-0E1424?style=flat-square&logo=burpsuite&logoColor=16F74F" alt="Burp Suite" />
+  <img src="https://img.shields.io/badge/Wireshark-0E1424?style=flat-square&logo=wireshark&logoColor=16F74F" alt="Wireshark" />
+  <img src="https://img.shields.io/badge/Ghidra-0E1424?style=flat-square&logo=ghidra&logoColor=16F74F" alt="Ghidra" />
+  <img src="https://img.shields.io/badge/Nmap-0E1424?style=flat-square&logo=gnometerminal&logoColor=16F74F" alt="Nmap" />
+  <img src="https://img.shields.io/badge/Metasploit-0E1424?style=flat-square&logo=metasploit&logoColor=16F74F" alt="Metasploit" />
+</div>
 
+<img src="https://raw.githubusercontent.com/AtokTajuddin/AtokTajuddin/master/assets/divider-neon.svg?v=1" width="100%" alt="" />
+
+<!-- SECTION: projects -->
+<img src="https://raw.githubusercontent.com/AtokTajuddin/AtokTajuddin/master/assets/sect-projects.svg?v=1" width="100%" alt="featured projects" />
+
+<table align="center" border="0">
+  <tr>
+    <td valign="top" width="50%">
+      <a href="https://github.com/AtokTajuddin/big_architectiure_soc_project"><b><code>big_architectiure_soc_project</code></b></a><br/>
+      <sub>Custom SOC architecture with ML-based detection &amp; CVE matching</sub><br/>
+      <img src="https://img.shields.io/github/languages/top/AtokTajuddin/big_architectiure_soc_project?style=flat-square&labelColor=040805&color=16F74F" alt="Top language of big_architectiure_soc_project" />
+      <img src="https://img.shields.io/github/stars/AtokTajuddin/big_architectiure_soc_project?style=flat-square&labelColor=040805&color=16F74F" alt="Stars of big_architectiure_soc_project" />
+      <img src="https://img.shields.io/github/last-commit/AtokTajuddin/big_architectiure_soc_project?style=flat-square&labelColor=040805&color=16F74F" alt="Last commit to big_architectiure_soc_project" />
+    </td>
+    <td valign="top" width="50%">
+      <a href="https://github.com/AtokTajuddin/BOAR_Project"><b><code>BOAR_Project</code></b></a><br/>
+      <sub>Buffer Overflow Analysis &amp; Remediation Framework</sub><br/>
+      <img src="https://img.shields.io/github/languages/top/AtokTajuddin/BOAR_Project?style=flat-square&labelColor=040805&color=16F74F" alt="Top language of BOAR_Project" />
+      <img src="https://img.shields.io/github/stars/AtokTajuddin/BOAR_Project?style=flat-square&labelColor=040805&color=16F74F" alt="Stars of BOAR_Project" />
+      <img src="https://img.shields.io/github/last-commit/AtokTajuddin/BOAR_Project?style=flat-square&labelColor=040805&color=16F74F" alt="Last commit to BOAR_Project" />
+    </td>
+  </tr>
+  <tr>
+    <td valign="top" width="50%">
+      <a href="https://github.com/AtokTajuddin/nim-pe-analyzer"><b><code>nim-pe-analyzer</code></b></a><br/>
+      <sub>Detects magic-byte manipulation in PE/.exe files</sub><br/>
+      <img src="https://img.shields.io/github/languages/top/AtokTajuddin/nim-pe-analyzer?style=flat-square&labelColor=040805&color=16F74F" alt="Top language of nim-pe-analyzer" />
+      <img src="https://img.shields.io/github/stars/AtokTajuddin/nim-pe-analyzer?style=flat-square&labelColor=040805&color=16F74F" alt="Stars of nim-pe-analyzer" />
+      <img src="https://img.shields.io/github/last-commit/AtokTajuddin/nim-pe-analyzer?style=flat-square&labelColor=040805&color=16F74F" alt="Last commit to nim-pe-analyzer" />
+    </td>
+    <td valign="top" width="50%">
+      <a href="https://github.com/AtokTajuddin/aren-framework"><b><code>aren-framework</code></b></a><br/>
+      <sub>C++ as a web backend &mdash; personal project, testing phase</sub><br/>
+      <img src="https://img.shields.io/github/languages/top/AtokTajuddin/aren-framework?style=flat-square&labelColor=040805&color=16F74F" alt="Top language of aren-framework" />
+      <img src="https://img.shields.io/github/stars/AtokTajuddin/aren-framework?style=flat-square&labelColor=040805&color=16F74F" alt="Stars of aren-framework" />
+      <img src="https://img.shields.io/github/last-commit/AtokTajuddin/aren-framework?style=flat-square&labelColor=040805&color=16F74F" alt="Last commit to aren-framework" />
+    </td>
+  </tr>
+</table>
+
+<div align="center">
+  <sub>Badge di atas ditarik langsung dari GitHub lewat shields.io, jadi selalu ikut kondisi repo terkini.</sub>
+</div>
+
+<img src="https://raw.githubusercontent.com/AtokTajuddin/AtokTajuddin/master/assets/divider-neon.svg?v=1" width="100%" alt="" />
+
+<!-- SECTION: now -->
+<img src="https://raw.githubusercontent.com/AtokTajuddin/AtokTajuddin/master/assets/sect-now.svg?v=1" width="100%" alt="ps aux - currently running" />
+
+<div align="center">
+  <img src="https://raw.githubusercontent.com/AtokTajuddin/AtokTajuddin/master/assets/now.svg?v=1" width="100%" alt="Currently working on: low-level utils in C and Rust, red team tradecraft and reverse engineering, backend services in Go and TypeScript, bare-metal ARM, networking and system architecture" />
+</div>
+
+<img src="https://raw.githubusercontent.com/AtokTajuddin/AtokTajuddin/master/assets/divider-neon.svg?v=1" width="100%" alt="" />
+
+<!-- SECTION: stats -->
+<img src="https://raw.githubusercontent.com/AtokTajuddin/AtokTajuddin/master/assets/sect-stats.svg?v=1" width="100%" alt="system stats" />
+
+<div align="center">
+  <img src="https://raw.githubusercontent.com/AtokTajuddin/AtokTajuddin/master/assets/stats.svg?v=1" width="100%" alt="GitHub metrics: commits, pull requests, issues, stars, forks, repositories, followers, and language mix" />
+  <br/><br/>
+  <img src="https://streak-stats.demolab.com?user=AtokTajuddin&theme=transparent&background=040805&stroke=16F74F&ring=A855F7&fire=22D3EE&currStreakLabel=16F74F&sideLabels=16F74F&dates=8CE6A5&currStreakNum=FFFFFF&sideNums=FFFFFF&hide_border=true&cache_seconds=14400" width="60%" alt="Contribution streak for AtokTajuddin" />
+  <br/><br/>
+  <img src="https://raw.githubusercontent.com/AtokTajuddin/AtokTajuddin/output/github-snake.svg" width="100%" alt="Contribution snake animation" />
+</div>
+
+<img src="https://raw.githubusercontent.com/AtokTajuddin/AtokTajuddin/master/assets/divider-neon.svg?v=1" width="100%" alt="" />
+
+<!-- SECTION: connect -->
+<img src="https://raw.githubusercontent.com/AtokTajuddin/AtokTajuddin/master/assets/sect-connect.svg?v=1" width="100%" alt="connect" />
+
+<div align="center">
+  <sub>Open for bug bounty hunts, CTFs, red team study circles, and small research crews at the intersection of AI and security.</sub>
+  <br/><br/>
+  <a href="https://github.com/AtokTajuddin"><img src="https://img.shields.io/badge/GitHub-0E1424?style=for-the-badge&logo=github&logoColor=22D3EE" alt="GitHub profile" /></a>
+  <a href="https://profile.hackthebox.com/profile/019cfed2-60ce-730f-a565-c66876cfda10"><img src="https://img.shields.io/badge/Hack%20The%20Box-0E1424?style=for-the-badge&logo=hackthebox&logoColor=A855F7" alt="Hack The Box profile" /></a>
+  <a href="https://tryhackme.com/p/Dre4mCatch3r"><img src="https://img.shields.io/badge/TryHackMe-0E1424?style=for-the-badge&logo=tryhackme&logoColor=34D399" alt="TryHackMe profile Dre4mCatch3r" /></a>
+</div>
+
+<br/>
+
+<div align="center">
+  <img src="https://raw.githubusercontent.com/AtokTajuddin/AtokTajuddin/master/assets/glitch.svg?v=1" width="100%" alt="ATOK TAJUDDIN - systems engineer, red teamer, builder" />
+  <br/>
   <code>&gt; exit 0</code>
-
 </div>

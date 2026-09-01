@@ -1,0 +1,87 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 250" width="900" height="250" font-family="'Fira Code','JetBrains Mono',ui-monospace,SFMono-Regular,Menlo,Consolas,'DejaVu Sans Mono',monospace" role="img" aria-label="Sedang dikerjakan: low-level utils in C &amp; Rust, red team tradecraft &amp; reverse engineering, backend services in Go &amp; TypeScript, bare-metal ARM (C + Assembly), networking &amp; system architecture">
+  <title>ps aux - sedang berjalan</title>
+  <rect width="900" height="250" rx="14" fill="#040805"/>
+  <rect x="0" y="0" width="900" height="36" rx="14" fill="#0A160E"/>
+  <rect x="0" y="22" width="900" height="14" fill="#0A160E"/>
+  <text x="30" y="23" font-size="12" fill="#0B7A2C" letter-spacing="2">PID</text>
+  <text x="86" y="23" font-size="12" fill="#0B7A2C" letter-spacing="2">TASK</text>
+  <text x="560" y="23" font-size="12" fill="#0B7A2C" letter-spacing="2">ACTIVITY</text>
+  <text x="768" y="23" font-size="12" fill="#0B7A2C" letter-spacing="2">STATE</text>
+  <line x1="0" y1="36" x2="900" y2="36" stroke="#16F74F" stroke-opacity="0.22"/>
+  <g>
+    <rect x="14" y="42" width="872" height="28" rx="7" fill="#0A160E" opacity="0.55"/>
+    <text x="30" y="62" font-size="13" fill="#0B7A2C">0x01</text>
+    <text x="86" y="62" font-size="14" fill="#8CE6A5">low-level utils in C &amp; Rust</text>
+    <rect x="560" y="54" width="190" height="7" rx="3.5" fill="#0E2A18"/>
+    <rect y="54" width="58" height="7" rx="3.5" fill="#16F74F" opacity="0.9">
+      <animate attributeName="x" dur="3.2s" begin="0.0s" repeatCount="indefinite"
+               values="560;692;560" keyTimes="0;0.5;1"
+               calcMode="spline" keySplines="0.45 0 0.55 1;0.45 0 0.55 1"/>
+    </rect>
+    <circle cx="768" cy="57" r="4" fill="#16F74F">
+      <animate attributeName="opacity" dur="1.8s" begin="0.0s" repeatCount="indefinite" values="1;0.2;1"/>
+    </circle>
+    <text x="780" y="62" font-size="12" fill="#16F74F" letter-spacing="1">RUNNING</text>
+  </g>
+  <g>
+    <rect x="14" y="76" width="872" height="28" rx="7" fill="#0A160E" opacity="0.55"/>
+    <text x="30" y="96" font-size="13" fill="#0B7A2C">0x02</text>
+    <text x="86" y="96" font-size="14" fill="#8CE6A5">red team tradecraft &amp; reverse engineering</text>
+    <rect x="560" y="88" width="190" height="7" rx="3.5" fill="#0E2A18"/>
+    <rect y="88" width="58" height="7" rx="3.5" fill="#16F74F" opacity="0.9">
+      <animate attributeName="x" dur="3.2s" begin="-0.9s" repeatCount="indefinite"
+               values="560;692;560" keyTimes="0;0.5;1"
+               calcMode="spline" keySplines="0.45 0 0.55 1;0.45 0 0.55 1"/>
+    </rect>
+    <circle cx="768" cy="91" r="4" fill="#16F74F">
+      <animate attributeName="opacity" dur="1.8s" begin="-0.9s" repeatCount="indefinite" values="1;0.2;1"/>
+    </circle>
+    <text x="780" y="96" font-size="12" fill="#16F74F" letter-spacing="1">TRAINING</text>
+  </g>
+  <g>
+    <rect x="14" y="110" width="872" height="28" rx="7" fill="#0A160E" opacity="0.55"/>
+    <text x="30" y="130" font-size="13" fill="#0B7A2C">0x03</text>
+    <text x="86" y="130" font-size="14" fill="#8CE6A5">backend services in Go &amp; TypeScript</text>
+    <rect x="560" y="122" width="190" height="7" rx="3.5" fill="#0E2A18"/>
+    <rect y="122" width="58" height="7" rx="3.5" fill="#16F74F" opacity="0.9">
+      <animate attributeName="x" dur="3.2s" begin="-1.8s" repeatCount="indefinite"
+               values="560;692;560" keyTimes="0;0.5;1"
+               calcMode="spline" keySplines="0.45 0 0.55 1;0.45 0 0.55 1"/>
+    </rect>
+    <circle cx="768" cy="125" r="4" fill="#16F74F">
+      <animate attributeName="opacity" dur="1.8s" begin="-1.8s" repeatCount="indefinite" values="1;0.2;1"/>
+    </circle>
+    <text x="780" y="130" font-size="12" fill="#16F74F" letter-spacing="1">SHIPPING</text>
+  </g>
+  <g>
+    <rect x="14" y="144" width="872" height="28" rx="7" fill="#0A160E" opacity="0.55"/>
+    <text x="30" y="164" font-size="13" fill="#0B7A2C">0x04</text>
+    <text x="86" y="164" font-size="14" fill="#8CE6A5">bare-metal ARM (C + Assembly)</text>
+    <rect x="560" y="156" width="190" height="7" rx="3.5" fill="#0E2A18"/>
+    <rect y="156" width="58" height="7" rx="3.5" fill="#16F74F" opacity="0.9">
+      <animate attributeName="x" dur="3.2s" begin="-2.7s" repeatCount="indefinite"
+               values="560;692;560" keyTimes="0;0.5;1"
+               calcMode="spline" keySplines="0.45 0 0.55 1;0.45 0 0.55 1"/>
+    </rect>
+    <circle cx="768" cy="159" r="4" fill="#16F74F">
+      <animate attributeName="opacity" dur="1.8s" begin="-2.7s" repeatCount="indefinite" values="1;0.2;1"/>
+    </circle>
+    <text x="780" y="164" font-size="12" fill="#16F74F" letter-spacing="1">EXPLORING</text>
+  </g>
+  <g>
+    <rect x="14" y="178" width="872" height="28" rx="7" fill="#0A160E" opacity="0.55"/>
+    <text x="30" y="198" font-size="13" fill="#0B7A2C">0x05</text>
+    <text x="86" y="198" font-size="14" fill="#8CE6A5">networking &amp; system architecture</text>
+    <rect x="560" y="190" width="190" height="7" rx="3.5" fill="#0E2A18"/>
+    <rect y="190" width="58" height="7" rx="3.5" fill="#16F74F" opacity="0.9">
+      <animate attributeName="x" dur="3.2s" begin="-3.6s" repeatCount="indefinite"
+               values="560;692;560" keyTimes="0;0.5;1"
+               calcMode="spline" keySplines="0.45 0 0.55 1;0.45 0 0.55 1"/>
+    </rect>
+    <circle cx="768" cy="193" r="4" fill="#16F74F">
+      <animate attributeName="opacity" dur="1.8s" begin="-3.6s" repeatCount="indefinite" values="1;0.2;1"/>
+    </circle>
+    <text x="780" y="198" font-size="12" fill="#16F74F" letter-spacing="1">LEARNING</text>
+  </g>
+  <rect x="0.5" y="0.5" width="899" height="249" rx="14" fill="none" stroke="#16F74F" stroke-opacity="0.3"/>
+</svg>
