@@ -142,7 +142,6 @@ def render(data, login):
   <rect width="{W}" height="{fmt(H)}" rx="14" fill="{CARD}"/>
   <rect x="0" y="0" width="{W}" height="3" rx="1.5" fill="url(#hd)"/>
   <text x="30" y="40" font-size="15" font-weight="700" fill="{GREEN}">{escape(login)} :: metrics</text>
-  <text x="{W - 30}" y="40" font-size="11" text-anchor="end" fill="{GREEN_DIM}">self-hosted, refreshed daily</text>
   <line x1="0" y1="52" x2="{W}" y2="52" stroke="{GREEN}" stroke-opacity="0.2"/>
   <text x="{fmt(LX)}" y="{fmt(top)}" font-size="13" fill="{GREEN_DIM}" letter-spacing="2">LANGUAGE MIX</text>
 {chr(10).join(segs)}

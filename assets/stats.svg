@@ -9,7 +9,6 @@
   <rect width="900" height="302" rx="14" fill="#040805"/>
   <rect x="0" y="0" width="900" height="3" rx="1.5" fill="url(#hd)"/>
   <text x="30" y="40" font-size="15" font-weight="700" fill="#16F74F">AtokTajuddin :: metrics</text>
-  <text x="870" y="40" font-size="11" text-anchor="end" fill="#0B7A2C">self-hosted, refreshed daily</text>
   <line x1="0" y1="52" x2="900" y2="52" stroke="#16F74F" stroke-opacity="0.2"/>
   <text x="470" y="74" font-size="13" fill="#0B7A2C" letter-spacing="2">LANGUAGE MIX</text>
   <rect x="470" y="114" width="0" height="16" fill="#f1e05a" opacity="0.92">

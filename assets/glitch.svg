@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 170" width="900" height="170" font-family="'Fira Code','JetBrains Mono',ui-monospace,SFMono-Regular,Menlo,Consolas,'DejaVu Sans Mono',monospace" role="img" aria-label="ATOK TAJUDDIN - systems engineer  ::  red teamer  ::  builder">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 170" width="900" height="170" font-family="'Fira Code','JetBrains Mono',ui-monospace,SFMono-Regular,Menlo,Consolas,'DejaVu Sans Mono',monospace" role="img" aria-label="ATOK TAJUDDIN - devsecops engineer  ::  pentest &amp; red team  ::  builder">
   <title>ATOK TAJUDDIN</title>
   <defs>
     <filter id="g2" x="-40%" y="-40%" width="180%" height="180%">
@@ -42,7 +42,7 @@
     <g clip-path="url(#sl3)" class="gl" style="animation-delay:2.27s"><use href="#nm" transform="translate(-22,0)" fill="#16F74F"/></g>
     <g clip-path="url(#sl4)" class="gl" style="animation-delay:0.57s"><use href="#nm" transform="translate(-16,0)" fill="#16F74F"/></g>
   <g opacity="0.75">
-    <text x="450" y="124" text-anchor="middle" font-size="15" fill="#8CE6A5" letter-spacing="2">systems engineer  ::  red teamer  ::  builder</text>
+    <text x="450" y="124" text-anchor="middle" font-size="15" fill="#8CE6A5" letter-spacing="2">devsecops engineer  ::  pentest &amp; red team  ::  builder</text>
   </g>
   <g transform="translate(300,146)">
     <line x1="0" y1="0" x2="300" y2="0" stroke="#16F74F" stroke-opacity="0.3"/>

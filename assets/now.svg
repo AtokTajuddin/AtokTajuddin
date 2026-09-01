@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 250" width="900" height="250" font-family="'Fira Code','JetBrains Mono',ui-monospace,SFMono-Regular,Menlo,Consolas,'DejaVu Sans Mono',monospace" role="img" aria-label="Sedang dikerjakan: low-level utils in C &amp; Rust, red team tradecraft &amp; reverse engineering, backend services in Go &amp; TypeScript, bare-metal ARM (C + Assembly), networking &amp; system architecture">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 250" width="900" height="250" font-family="'Fira Code','JetBrains Mono',ui-monospace,SFMono-Regular,Menlo,Consolas,'DejaVu Sans Mono',monospace" role="img" aria-label="Sedang dikerjakan: low-level utils in C &amp; Rust, pentest &amp; red team tradecraft, reverse engineering, backend services in Go &amp; TypeScript, bare-metal ARM (C + Assembly), networking &amp; system architecture">
   <title>ps aux - sedang berjalan</title>
   <rect width="900" height="250" rx="14" fill="#040805"/>
   <rect x="0" y="0" width="900" height="36" rx="14" fill="#0A160E"/>
@@ -26,7 +26,7 @@
   <g>
     <rect x="14" y="76" width="872" height="28" rx="7" fill="#0A160E" opacity="0.55"/>
     <text x="30" y="96" font-size="13" fill="#0B7A2C">0x02</text>
-    <text x="86" y="96" font-size="14" fill="#8CE6A5">red team tradecraft &amp; reverse engineering</text>
+    <text x="86" y="96" font-size="14" fill="#8CE6A5">pentest &amp; red team tradecraft, reverse engineering</text>
     <rect x="560" y="88" width="190" height="7" rx="3.5" fill="#0E2A18"/>
     <rect y="88" width="58" height="7" rx="3.5" fill="#16F74F" opacity="0.9">
       <animate attributeName="x" dur="3.2s" begin="-0.9s" repeatCount="indefinite"

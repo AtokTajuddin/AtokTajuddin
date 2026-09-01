@@ -1,6 +1,6 @@
 <!-- SECTION: Banner -->
 <div align="center">
-  <img src="https://raw.githubusercontent.com/AtokTajuddin/AtokTajuddin/master/assets/banner.svg?v=1" width="100%" alt="Atok Tajuddin - Systems Engineer and Red Teamer" />
+  <img src="https://raw.githubusercontent.com/AtokTajuddin/AtokTajuddin/master/assets/banner.svg?v=2" width="100%" alt="Atok Tajuddin - DevSecOps Engineer, Pentest and Red Team" />
 </div>
 
 <div align="center">
@@ -9,42 +9,42 @@
   <img src="https://komarev.com/ghpvc/?username=AtokTajuddin&color=34D399&style=for-the-badge&base=0&label=views" alt="Profile views" />
 </div>
 
-<img src="https://raw.githubusercontent.com/AtokTajuddin/AtokTajuddin/master/assets/divider-neon.svg?v=1" width="100%" alt="" />
+<img src="https://raw.githubusercontent.com/AtokTajuddin/AtokTajuddin/master/assets/divider-neon.svg?v=2" width="100%" alt="" />
 
 <!-- SECTION: whoami -->
-<img src="https://raw.githubusercontent.com/AtokTajuddin/AtokTajuddin/master/assets/sect-whoami.svg?v=1" width="100%" alt="whoami" />
+<img src="https://raw.githubusercontent.com/AtokTajuddin/AtokTajuddin/master/assets/sect-whoami.svg?v=2" width="100%" alt="whoami" />
 
 <div align="center">
-  <img src="https://raw.githubusercontent.com/AtokTajuddin/AtokTajuddin/master/assets/hero.svg?v=1" width="100%" alt="Terminal: atok tajuddin, systems engineer and red teamer, low-level, offensive security, backend, networking" />
+  <img src="https://raw.githubusercontent.com/AtokTajuddin/AtokTajuddin/master/assets/hero.svg?v=2" width="100%" alt="Terminal: atok tajuddin, devsecops engineer and ethical hacker, pentest and red team, backend, low-level" />
 </div>
 
 <div align="center">
   <sub>Information Technology undergraduate at <b>Institut Teknologi Sepuluh Nopember (ITS)</b> &middot; Surabaya, Indonesia</sub>
 </div>
 
-<img src="https://raw.githubusercontent.com/AtokTajuddin/AtokTajuddin/master/assets/divider-neon.svg?v=1" width="100%" alt="" />
+<img src="https://raw.githubusercontent.com/AtokTajuddin/AtokTajuddin/master/assets/divider-neon.svg?v=2" width="100%" alt="" />
 
 <!-- SECTION: focus -->
-<img src="https://raw.githubusercontent.com/AtokTajuddin/AtokTajuddin/master/assets/sect-focus.svg?v=1" width="100%" alt="focus areas" />
+<img src="https://raw.githubusercontent.com/AtokTajuddin/AtokTajuddin/master/assets/sect-focus.svg?v=2" width="100%" alt="focus areas" />
 
 <table align="center" border="0">
   <tr>
     <td valign="top" width="60%">
-      <img src="https://raw.githubusercontent.com/AtokTajuddin/AtokTajuddin/master/assets/focus-list.svg?v=1" width="100%" alt="Focus: low-level and systems programming, offensive security, hardware programming, backend engineering, networking and architecture" />
+      <img src="https://raw.githubusercontent.com/AtokTajuddin/AtokTajuddin/master/assets/focus-list.svg?v=2" width="100%" alt="Focus: low-level and systems programming, offensive security including pentest and red team, devsecops and security automation, hardware programming, backend engineering, networking and architecture" />
     </td>
     <td valign="top" width="40%">
-      <img src="https://raw.githubusercontent.com/AtokTajuddin/AtokTajuddin/master/assets/radar.svg?v=1" width="100%" alt="Radar sweep: recon, web, binary, network, hardware, backend" />
+      <img src="https://raw.githubusercontent.com/AtokTajuddin/AtokTajuddin/master/assets/radar.svg?v=2" width="100%" alt="Radar sweep: recon, web, binary, network, hardware, backend" />
     </td>
   </tr>
 </table>
 
-<img src="https://raw.githubusercontent.com/AtokTajuddin/AtokTajuddin/master/assets/divider-neon.svg?v=1" width="100%" alt="" />
+<img src="https://raw.githubusercontent.com/AtokTajuddin/AtokTajuddin/master/assets/divider-neon.svg?v=2" width="100%" alt="" />
 
 <!-- SECTION: arsenal -->
-<img src="https://raw.githubusercontent.com/AtokTajuddin/AtokTajuddin/master/assets/sect-arsenal.svg?v=1" width="100%" alt="arsenal" />
+<img src="https://raw.githubusercontent.com/AtokTajuddin/AtokTajuddin/master/assets/sect-arsenal.svg?v=2" width="100%" alt="arsenal" />
 
 <div align="center">
-  <img src="https://raw.githubusercontent.com/AtokTajuddin/AtokTajuddin/master/assets/marquee.svg?v=1" width="100%" alt="Tech stack ticker: C, C++, Rust, Go, Python, Bash, TypeScript, React, Node.js, PostgreSQL, Redis, Docker, Linux, Nmap, Burp Suite, Ghidra, Metasploit, Wireshark, Assembly, Git" />
+  <img src="https://raw.githubusercontent.com/AtokTajuddin/AtokTajuddin/master/assets/marquee.svg?v=2" width="100%" alt="Tech stack ticker: C, C++, Rust, Go, Python, Bash, TypeScript, React, Node.js, PostgreSQL, Redis, Docker, Linux, Nmap, Burp Suite, Ghidra, Metasploit, Wireshark, Assembly, Git" />
   <br/><br/>
   <a href="https://skillicons.dev"><img src="https://skillicons.dev/icons?i=c,cpp,rust,go,python,java,bash,ts,react&theme=dark" alt="Languages: C, C++, Rust, Go, Python, Java, Bash, TypeScript, React" /></a>
   <br/>
@@ -57,10 +57,10 @@
   <img src="https://img.shields.io/badge/Metasploit-0E1424?style=flat-square&logo=metasploit&logoColor=16F74F" alt="Metasploit" />
 </div>
 
-<img src="https://raw.githubusercontent.com/AtokTajuddin/AtokTajuddin/master/assets/divider-neon.svg?v=1" width="100%" alt="" />
+<img src="https://raw.githubusercontent.com/AtokTajuddin/AtokTajuddin/master/assets/divider-neon.svg?v=2" width="100%" alt="" />
 
 <!-- SECTION: projects -->
-<img src="https://raw.githubusercontent.com/AtokTajuddin/AtokTajuddin/master/assets/sect-projects.svg?v=1" width="100%" alt="featured projects" />
+<img src="https://raw.githubusercontent.com/AtokTajuddin/AtokTajuddin/master/assets/sect-projects.svg?v=2" width="100%" alt="featured projects" />
 
 <table align="center" border="0">
   <tr>
@@ -97,36 +97,32 @@
   </tr>
 </table>
 
-<div align="center">
-  <sub>Badge di atas ditarik langsung dari GitHub lewat shields.io, jadi selalu ikut kondisi repo terkini.</sub>
-</div>
-
-<img src="https://raw.githubusercontent.com/AtokTajuddin/AtokTajuddin/master/assets/divider-neon.svg?v=1" width="100%" alt="" />
+<img src="https://raw.githubusercontent.com/AtokTajuddin/AtokTajuddin/master/assets/divider-neon.svg?v=2" width="100%" alt="" />
 
 <!-- SECTION: now -->
-<img src="https://raw.githubusercontent.com/AtokTajuddin/AtokTajuddin/master/assets/sect-now.svg?v=1" width="100%" alt="ps aux - currently running" />
+<img src="https://raw.githubusercontent.com/AtokTajuddin/AtokTajuddin/master/assets/sect-now.svg?v=2" width="100%" alt="ps aux - currently running" />
 
 <div align="center">
-  <img src="https://raw.githubusercontent.com/AtokTajuddin/AtokTajuddin/master/assets/now.svg?v=1" width="100%" alt="Currently working on: low-level utils in C and Rust, red team tradecraft and reverse engineering, backend services in Go and TypeScript, bare-metal ARM, networking and system architecture" />
+  <img src="https://raw.githubusercontent.com/AtokTajuddin/AtokTajuddin/master/assets/now.svg?v=2" width="100%" alt="Currently working on: low-level utils in C and Rust, pentest and red team tradecraft plus reverse engineering, backend services in Go and TypeScript, bare-metal ARM, networking and system architecture" />
 </div>
 
-<img src="https://raw.githubusercontent.com/AtokTajuddin/AtokTajuddin/master/assets/divider-neon.svg?v=1" width="100%" alt="" />
+<img src="https://raw.githubusercontent.com/AtokTajuddin/AtokTajuddin/master/assets/divider-neon.svg?v=2" width="100%" alt="" />
 
 <!-- SECTION: stats -->
-<img src="https://raw.githubusercontent.com/AtokTajuddin/AtokTajuddin/master/assets/sect-stats.svg?v=1" width="100%" alt="system stats" />
+<img src="https://raw.githubusercontent.com/AtokTajuddin/AtokTajuddin/master/assets/sect-stats.svg?v=2" width="100%" alt="system stats" />
 
 <div align="center">
-  <img src="https://raw.githubusercontent.com/AtokTajuddin/AtokTajuddin/master/assets/stats.svg?v=1" width="100%" alt="GitHub metrics: commits, pull requests, issues, stars, forks, repositories, followers, and language mix" />
+  <img src="https://raw.githubusercontent.com/AtokTajuddin/AtokTajuddin/master/assets/stats.svg?v=2" width="100%" alt="GitHub metrics: commits, pull requests, issues, stars, forks, repositories, followers, and language mix" />
   <br/><br/>
   <img src="https://streak-stats.demolab.com?user=AtokTajuddin&theme=transparent&background=040805&stroke=16F74F&ring=A855F7&fire=22D3EE&currStreakLabel=16F74F&sideLabels=16F74F&dates=8CE6A5&currStreakNum=FFFFFF&sideNums=FFFFFF&hide_border=true&cache_seconds=14400" width="60%" alt="Contribution streak for AtokTajuddin" />
   <br/><br/>
   <img src="https://raw.githubusercontent.com/AtokTajuddin/AtokTajuddin/output/github-snake.svg" width="100%" alt="Contribution snake animation" />
 </div>
 
-<img src="https://raw.githubusercontent.com/AtokTajuddin/AtokTajuddin/master/assets/divider-neon.svg?v=1" width="100%" alt="" />
+<img src="https://raw.githubusercontent.com/AtokTajuddin/AtokTajuddin/master/assets/divider-neon.svg?v=2" width="100%" alt="" />
 
 <!-- SECTION: connect -->
-<img src="https://raw.githubusercontent.com/AtokTajuddin/AtokTajuddin/master/assets/sect-connect.svg?v=1" width="100%" alt="connect" />
+<img src="https://raw.githubusercontent.com/AtokTajuddin/AtokTajuddin/master/assets/sect-connect.svg?v=2" width="100%" alt="connect" />
 
 <div align="center">
   <sub>Open for bug bounty hunts, CTFs, red team study circles, and small research crews at the intersection of AI and security.</sub>
@@ -139,7 +135,7 @@
 <br/>
 
 <div align="center">
-  <img src="https://raw.githubusercontent.com/AtokTajuddin/AtokTajuddin/master/assets/glitch.svg?v=1" width="100%" alt="ATOK TAJUDDIN - systems engineer, red teamer, builder" />
+  <img src="https://raw.githubusercontent.com/AtokTajuddin/AtokTajuddin/master/assets/glitch.svg?v=2" width="100%" alt="ATOK TAJUDDIN - devsecops engineer, pentest and red team, builder" />
   <br/>
   <code>&gt; exit 0</code>
 </div>

@@ -75,9 +75,9 @@ def build_hero():
 
     lines = [
         ("cmd", "$ whoami", 0.055),
-        ("out", "  atok tajuddin - systems engineer / red teamer", 0.016),
+        ("out", "  atok tajuddin - devsecops engineer / ethical hacker", 0.016),
         ("cmd", "$ cat /etc/focus", 0.055),
-        ("out", "  low-level . offensive security . backend . networking", 0.016),
+        ("out", "  devsecops . pentest & red team . backend . low-level", 0.016),
         ("cmd", "$ uptime --since", 0.055),
         ("out", "  building from the ground up, one commit at a time", 0.016),
         ("cmd", "$ ", 0.055),
@@ -225,7 +225,7 @@ def build_hero():
 # 2. GLITCH — nama besar dengan RGB split + slice glitch
 # --------------------------------------------------------------------------
 
-def build_glitch(name="ATOK TAJUDDIN", tagline="systems engineer  ::  red teamer  ::  builder"):
+def build_glitch(name="ATOK TAJUDDIN", tagline="devsecops engineer  ::  pentest & red team  ::  builder"):
     W, H = 900, 170
     FS = 62
     cy = 84
@@ -474,7 +474,7 @@ ROUND = ("'Quicksand','Comfortaa','Nunito',ui-rounded,'Segoe UI',"
 
 def build_banner(name="Atok Tajuddin",
                  kicker="ATOKTAJUDDIN",
-                 subtitle="Systems Engineer  ·  Red Teamer",
+                 subtitle="DevSecOps Engineer  ·  Pentest & Red Team",
                  pal=None):
     pal = pal or NEON
     W, H = 900, 300
@@ -695,7 +695,7 @@ def build_section(title, hint=""):
 def build_now(rows=None):
     rows = rows or [
         ("0x01", "low-level utils in C & Rust", "RUNNING"),
-        ("0x02", "red team tradecraft & reverse engineering", "TRAINING"),
+        ("0x02", "pentest & red team tradecraft, reverse engineering", "TRAINING"),
         ("0x03", "backend services in Go & TypeScript", "SHIPPING"),
         ("0x04", "bare-metal ARM (C + Assembly)", "EXPLORING"),
         ("0x05", "networking & system architecture", "LEARNING"),
@@ -751,7 +751,8 @@ def build_now(rows=None):
 def build_focus_list(items=None):
     items = items or [
         ("low-level & systems programming", "C / Rust / Assembly"),
-        ("offensive security", "red team / reverse engineering"),
+        ("offensive security", "pentest / ethical hacking / red team"),
+        ("devsecops & security automation", "CI/CD security / containers / IaC"),
         ("hardware programming", "bare-metal ARM"),
         ("backend engineering", "Go / TypeScript / SQL"),
         ("networking & architecture", "TCP/IP / distributed systems"),
