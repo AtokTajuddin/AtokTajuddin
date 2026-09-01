@@ -766,7 +766,7 @@ def build_focus_list(items=None):
         y = 34 + i * RH
         d = round(i * 0.35, 2)
         rows.append(
-            f'  <g class="row" style="animation-delay:{d}s">\n'
+            f'  <g>\n'
             f'    <rect x="18" y="{fmt(y - 9)}" width="10" height="10" rx="2" fill="{a if i % 2 == 0 else b}"/>\n'
             f'    <rect x="14" y="{fmt(y - 13)}" width="18" height="18" rx="4" fill="none" stroke="{GREEN}">\n'
             f'      <animate attributeName="opacity" dur="2.4s" begin="{d}s" repeatCount="indefinite" values="0.15;0.85;0.15"/>\n'
@@ -778,12 +778,6 @@ def build_focus_list(items=None):
         )
     return f"""<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {W} {fmt(H)}" width="{W}" height="{fmt(H)}" font-family="{MONO}" role="img" aria-label="Bidang fokus: {escape(', '.join(i[0] for i in items))}">
   <title>focus areas</title>
-  <style>
-    .row {{ opacity: 0; animation: in 9s ease-out infinite; }}
-    @keyframes in {{ 0% {{ opacity: 0; transform: translateX(-14px) }}
-      8%, 96% {{ opacity: 1; transform: translateX(0) }}
-      100% {{ opacity: 0; transform: translateX(-14px) }} }}
-  </style>
   <rect width="{W}" height="{fmt(H)}" rx="14" fill="{CARD}"/>
 {chr(10).join(rows)}
   <rect x="0.5" y="0.5" width="{W - 1}" height="{fmt(H - 1)}" rx="14" fill="none" stroke="{GREEN}" stroke-opacity="0.3"/>
