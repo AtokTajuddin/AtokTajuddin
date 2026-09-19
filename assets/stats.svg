@@ -94,7 +94,7 @@
       <animate attributeName="opacity" dur="2.6s" begin="-2.4s" repeatCount="indefinite" values="0.25;1;0.25"/>
     </circle>
     <text x="46" y="254" font-size="14" fill="#8CE6A5">followers</text>
-    <text x="420" y="254" font-size="15" font-weight="700" text-anchor="end" fill="#16F74F">16</text>
+    <text x="420" y="254" font-size="15" font-weight="700" text-anchor="end" fill="#16F74F">19</text>
     <line x1="46" y1="263" x2="420" y2="263" stroke="#16F74F" stroke-opacity="0.10"/>
   </g>
   <rect x="0.5" y="0.5" width="899" height="301" rx="14" fill="none" stroke="#16F74F" stroke-opacity="0.3"/>
