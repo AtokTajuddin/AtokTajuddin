@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 280" role="img" aria-labelledby="title desc">
+  <title id="title">Atok Tajuddin — cybersecurity engineering</title>
+  <desc id="desc">Dark editorial banner with Atok Tajuddin's name, security focus, and a subtle network diagram.</desc>
+  <defs>
+    <linearGradient id="background" x2="1" y2="1">
+      <stop stop-color="#101d2c"/>
+      <stop offset="1" stop-color="#0a111b"/>
+    </linearGradient>
+    <pattern id="grid" width="28" height="28" patternUnits="userSpaceOnUse">
+      <path d="M28 0H0V28" fill="none" stroke="#506377" stroke-opacity=".13"/>
+    </pattern>
+    <clipPath id="frame"><rect width="1000" height="280" rx="18"/></clipPath>
+  </defs>
+  <g clip-path="url(#frame)">
+    <rect width="1000" height="280" fill="url(#background)"/>
+    <rect x="576" width="424" height="280" fill="url(#grid)"/>
+    <rect x="0" y="0" width="6" height="280" fill="#61d7c0"/>
+    <path d="M603 0v280" stroke="#40576a" stroke-opacity=".55"/>
+    <text x="62" y="51" fill="#73dcc7" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="700" letter-spacing="3">ATOK / SECURITY ENGINEERING</text>
+    <text x="58" y="119" fill="#f2f6f8" font-family="Arial, Helvetica, sans-serif" font-size="52" font-weight="700" letter-spacing="-2">Atok Tajuddin</text>
+    <text x="62" y="157" fill="#b8c8d3" font-family="Arial, Helvetica, sans-serif" font-size="18">Pentesting  /  Red Team  /  Security Research</text>
+    <path d="M62 188h471" stroke="#648092" stroke-opacity=".5"/>
+    <text x="62" y="217" fill="#8ea5b6" font-family="Arial, Helvetica, sans-serif" font-size="12" letter-spacing="1.5">SURABAYA, INDONESIA</text>
+    <text x="62" y="243" fill="#8ea5b6" font-family="Arial, Helvetica, sans-serif" font-size="12" letter-spacing="1.5">ITS  ·  INFORMATION TECHNOLOGY</text>
+    <g fill="none" stroke="#5a91a0" stroke-opacity=".45" stroke-width="1.5">
+      <path d="M653 182l67-78 79 24 86-66"/>
+      <path d="M653 182l86 36 60-90 103 62"/>
+      <path d="M720 104l19 114 163-28"/>
+      <circle cx="790" cy="140" r="85" stroke-dasharray="4 8" stroke-opacity=".35"/>
+      <circle cx="790" cy="140" r="49" stroke-opacity=".35"/>
+    </g>
+    <g fill="#0e1b27" stroke="#77c9bc" stroke-width="2">
+      <circle cx="653" cy="182" r="5"/>
+      <circle cx="720" cy="104" r="5"/>
+      <circle cx="739" cy="218" r="5"/>
+      <circle cx="799" cy="128" r="7" fill="#63d8c1"/>
+      <circle cx="885" cy="62" r="5"/>
+      <circle cx="902" cy="190" r="5"/>
+    </g>
+    <path d="M955 29h16v16M971 235v16h-16" fill="none" stroke="#73dcc7" stroke-opacity=".65" stroke-width="2"/>
+    <text x="639" y="42" fill="#8ea5b6" font-family="monospace" font-size="10" letter-spacing="2">SYSTEMS / NETWORKS / APPLICATIONS</text>
+  </g>
+</svg>
