@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="assets/profile-header.svg" width="100%" alt="Atok Tajuddin — cybersecurity engineering, pentesting, red team, and security research" />
+  <img src="assets/banner-storm.svg" width="100%" alt="Atok Tajuddin — cybersecurity engineering, pentesting, red team, and security research" />
 </div>
 
 <p align="center">
