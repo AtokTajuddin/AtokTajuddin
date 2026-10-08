@@ -86,7 +86,7 @@
       <animate attributeName="opacity" dur="2.6s" begin="-2.0s" repeatCount="indefinite" values="0.25;1;0.25"/>
     </circle>
     <text x="46" y="224" font-size="14" fill="#8CE6A5">public repos</text>
-    <text x="420" y="224" font-size="15" font-weight="700" text-anchor="end" fill="#16F74F">43</text>
+    <text x="420" y="224" font-size="15" font-weight="700" text-anchor="end" fill="#16F74F">44</text>
     <line x1="46" y1="233" x2="420" y2="233" stroke="#16F74F" stroke-opacity="0.10"/>
   </g>
   <g>
