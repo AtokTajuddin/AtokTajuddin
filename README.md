@@ -1,44 +1,13 @@
-<div align="center">
-  <img src="assets/banner-storm.svg" width="100%" alt="Atok Tajuddin — cybersecurity engineering, pentesting, red team, and security research" />
-</div>
-
 <p align="center">
-  <a href="https://github.com/AtokTajuddin?tab=repositories"><img src="https://img.shields.io/badge/Projects-Explore-173042?style=flat-square&logo=github&logoColor=white" alt="Explore projects" /></a>
-  <a href="https://profile.hackthebox.com/profile/019cfed2-60ce-730f-a565-c66876cfda10"><img src="https://img.shields.io/badge/Hack_The_Box-Profile-173042?style=flat-square&logo=hackthebox&logoColor=9FEF00" alt="Hack The Box profile" /></a>
-  <a href="https://tryhackme.com/p/Dre4mCatch3r"><img src="https://img.shields.io/badge/TryHackMe-Profile-173042?style=flat-square&logo=tryhackme&logoColor=white" alt="TryHackMe profile" /></a>
+<a href="https://github.com/AtokTajuddin?tab=repositories"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/hero-dark.svg" /><source media="(prefers-color-scheme: light)" srcset="assets/hero-light.svg" /><img src="assets/hero-dark.svg" width="66.33%" alt="Atok Tajuddin, offensive security and DevSecOps" /></picture></a><a href="https://profile.hackthebox.com/profile/019cfed2-60ce-730f-a565-c66876cfda10"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/htb-dark.svg" /><source media="(prefers-color-scheme: light)" srcset="assets/htb-light.svg" /><img src="assets/htb-dark.svg" width="33.17%" alt="Hack The Box profile" /></picture></a>
+<a href="https://tryhackme.com/p/Hadamard"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/thm-dark.svg" /><source media="(prefers-color-scheme: light)" srcset="assets/thm-light.svg" /><img src="assets/thm-dark.svg" width="33.17%" alt="TryHackMe profile Hadamard" /></picture></a><a href="https://github.com/AtokTajuddin/big_architectiure_soc_project"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/nexus-dark.svg" /><source media="(prefers-color-scheme: light)" srcset="assets/nexus-light.svg" /><img src="assets/nexus-dark.svg" width="66.33%" alt="Nexus Sentinel, a SOC lab in Docker Compose" /></picture></a>
+<a href="https://github.com/AtokTajuddin/BOAR_Project"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/boar-dark.svg" /><source media="(prefers-color-scheme: light)" srcset="assets/boar-light.svg" /><img src="assets/boar-dark.svg" width="49.75%" alt="BOAR, buffer-overflow analysis for C and C++" /></picture></a><a href="https://github.com/AtokTajuddin/nim-pe-analyzer"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/pe-dark.svg" /><source media="(prefers-color-scheme: light)" srcset="assets/pe-light.svg" /><img src="assets/pe-dark.svg" width="49.75%" alt="Nim PE Analyzer, a PE header checker" /></picture></a>
+<picture><source media="(prefers-color-scheme: dark)" srcset="assets/toolkit-dark.svg" /><source media="(prefers-color-scheme: light)" srcset="assets/toolkit-light.svg" /><img src="assets/toolkit-dark.svg" width="66.33%" alt="Toolkit" /></picture><picture><source media="(prefers-color-scheme: dark)" srcset="assets/langs-dark.svg" /><source media="(prefers-color-scheme: light)" srcset="assets/langs-light.svg" /><img src="assets/langs-dark.svg" width="33.17%" alt="Languages" /></picture>
+<picture><source media="(prefers-color-scheme: dark)" srcset="assets/activity-dark.svg" /><source media="(prefers-color-scheme: light)" srcset="assets/activity-light.svg" /><img src="assets/activity-dark.svg" width="66.33%" alt="GitHub activity" /></picture><picture><source media="(prefers-color-scheme: dark)" srcset="assets/trophies-dark.svg" /><source media="(prefers-color-scheme: light)" srcset="assets/trophies-light.svg" /><img src="assets/trophies-dark.svg" width="33.17%" alt="Trophies" /></picture>
 </p>
 
-## About me
+<p align="center"><picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/AtokTajuddin/AtokTajuddin/output/github-snake-dark.svg" /><source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/AtokTajuddin/AtokTajuddin/output/github-snake.svg" /><img src="https://raw.githubusercontent.com/AtokTajuddin/AtokTajuddin/output/github-snake.svg" width="98.08%" alt="Contribution snake eating through the past year of GitHub activity" /></picture></p>
 
-I am an Information Technology undergraduate at Institut Teknologi Sepuluh Nopember (ITS), based in Surabaya, Indonesia. I focus on offensive security and build practical tools to understand, test, and improve systems.
-
-My interests include web and network security, penetration testing, red team methodologies, reverse engineering, and security automation.
-
-## Selected projects
-
-| Project | Focus |
-| --- | --- |
-| [BOAR Project](https://github.com/AtokTajuddin/BOAR_Project) | Buffer overflow analysis and remediation |
-| [Nim PE Analyzer](https://github.com/AtokTajuddin/nim-pe-analyzer) | Detecting magic byte manipulation in Windows PE files |
-| [SOC Architecture Project](https://github.com/AtokTajuddin/big_architectiure_soc_project) | SOC architecture, ML based detection, and CVE matching |
-
-## Tools and technologies
-
-- **Security:** Burp Suite, Nmap, Wireshark, Ghidra, Metasploit
-- **Development:** Python, C/C++, Rust, Go, Bash, Linux, Docker, Git
-
-## GitHub activity
-
-<div align="center">
-  <img src="assets/stats.svg" width="88%" alt="GitHub activity metrics for Atok Tajuddin" />
-</div>
-
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/AtokTajuddin/AtokTajuddin/output/github-snake-dark.svg" />
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/AtokTajuddin/AtokTajuddin/output/github-snake.svg" />
-  <img src="https://raw.githubusercontent.com/AtokTajuddin/AtokTajuddin/output/github-snake.svg" width="100%" alt="Animated contribution snake across Atok Tajuddin's GitHub activity" />
-</picture>
-
----
+I study Information Technology at Institut Teknologi Sepuluh Nopember (ITS) in Surabaya. Most of my practice happens on Hack The Box and TryHackMe: web exploitation, then privilege escalation on Linux and Windows. Alongside it I write analysis tools in Python, C++ and Nim, and run a SOC lab for the defensive side.
 
 Interested in collaborating on security research, CTFs, and open source security tooling.

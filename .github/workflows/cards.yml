@@ -8,7 +8,7 @@ on:
   # Bisa dijalankan manual dari tab Actions
   workflow_dispatch:
 
-  # Ikut jalan saat aset atau generator berubah
+  # Ikut jalan saat generator berubah
   push:
     branches:
       - master
@@ -33,21 +33,25 @@ jobs:
         with:
           python-version: "3.12"
 
-      # Aset animasi murni deterministik, jadi cukup di-generate ulang
-      - name: Generate Animated Assets
-        run: python3 tools/gen_svg.py
+      # fontTools dipakai untuk subset font per SVG supaya ukuran aset kecil
+      - name: Install Font Tooling
+        run: pip install --quiet fonttools brotli
 
-      # Kartu statistik ditarik lewat GraphQL pakai token bawaan Actions
-      - name: Generate Stats Card
+      # Statistik ditarik lewat GraphQL pakai token bawaan Actions, disimpan ke assets/stats.json
+      - name: Fetch Stats
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: python3 tools/gen_cards.py ${{ github.repository_owner }}
+
+      # Tile bento (termasuk tile statistik) dirender ulang dari stats.json terbaru
+      - name: Generate Profile Tiles
+        run: python3 tools/variants/bento.py
 
       - name: Commit and Push
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
-          git add assets/
+          git add assets/ README.md
           git diff --staged --quiet && echo "Tidak ada perubahan" && exit 0
           git commit -m "update: refresh profile cards [skip ci]"
           git push origin master
